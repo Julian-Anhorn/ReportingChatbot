@@ -16,6 +16,8 @@ import { TableComponent } from './modules/dashboard/table/table.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
     MatTableModule,
     LayoutModule,
     MatToolbarModule,
+    MatFormFieldModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,

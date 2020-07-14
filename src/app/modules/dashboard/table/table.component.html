@@ -1,25 +1,27 @@
-<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+<mat-table [dataSource]="dataSource" matSort>
   <!-- Position Column -->
   <ng-container matColumnDef="Seite">
-    <mat-header-cell *matHeaderCellDef> Seite </mat-header-cell>
+    <mat-header-cell *matHeaderCellDef class="SeiteTD" mat-sort-header> Seite </mat-header-cell >
     <mat-cell *matCellDef="let element"> {{element[2]}} </mat-cell>
   </ng-container>
 
   <!-- Name Column -->
   <ng-container matColumnDef="Status">
-    <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
     <mat-cell *matCellDef="let element"> {{element[1]}} </mat-cell>
   </ng-container>
 
   <!-- Weight Column -->
   <ng-container matColumnDef="Aufrufe">
-    <mat-header-cell *matHeaderCellDef> Aufrufe </mat-header-cell>
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Aufrufe </mat-header-cell>
     <mat-cell *matCellDef="let element"> {{element[3]}} </mat-cell>
   </ng-container>
 
   <!-- Symbol Column -->
   <ng-container matColumnDef="Absprünge">
-    <mat-header-cell *matHeaderCellDef> Absprünge </mat-header-cell>
+    <mat-header-cell *matHeaderCellDef mat-sort-header> Absprünge </mat-header-cell>
     <mat-cell *matCellDef="let element"> {{element[4]}} </mat-cell>
   </ng-container>
 
