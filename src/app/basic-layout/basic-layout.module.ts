@@ -12,6 +12,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from '../modules/dashboard/dashboard.component';
+import { TableComponent } from '../modules/dashboard/table/table.component';
 
 
 
