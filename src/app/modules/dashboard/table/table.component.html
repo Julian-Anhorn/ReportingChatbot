@@ -1,19 +1,28 @@
-<table>
-  <thead>
-  <tr>
-    <th>Seite</th>
-    <th>Aufrufe</th>
-    <th>Absprünge</th>
-  </tr>
-  </thead>
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <!-- Position Column -->
+  <ng-container matColumnDef="Seite">
+    <mat-header-cell *matHeaderCellDef> Seite </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element[2]}} </mat-cell>
+  </ng-container>
 
-  <tbody>
-    <tr *ngFor="let character of result ">
-      <td>{{ character[2]}}</td>
-      <td>{{ character[3]}}</td>
-      <td>{{ character[4]}}</td>
+  <!-- Name Column -->
+  <ng-container matColumnDef="Status">
+    <mat-header-cell *matHeaderCellDef> Status </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element[1]}} </mat-cell>
+  </ng-container>
 
-  </tr>
-  </tbody>
+  <!-- Weight Column -->
+  <ng-container matColumnDef="Aufrufe">
+    <mat-header-cell *matHeaderCellDef> Aufrufe </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element[3]}} </mat-cell>
+  </ng-container>
 
-</table>
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="Absprünge">
+    <mat-header-cell *matHeaderCellDef> Absprünge </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{element[4]}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

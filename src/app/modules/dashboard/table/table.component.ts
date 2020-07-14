@@ -13,6 +13,8 @@ import importData from 'src/App/Data/data.json';
 
 export class TableComponent implements OnInit {
 result = importData['data'];
+displayedColumns: string[] = ['Seite', 'Status', 'Aufrufe', 'Absprünge'];
+dataSource = this.result;
 
   ngOnInit(): void {
 
