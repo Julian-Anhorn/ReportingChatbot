@@ -25,7 +25,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatInputModule,
     MatFormFieldModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    RouterModule
   ]
 })
 export class DashboardModule { }
