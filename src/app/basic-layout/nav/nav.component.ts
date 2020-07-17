@@ -29,7 +29,7 @@ export class NavComponent {
     fileReader.onload = () => {
     console.log(JSON.parse(fileReader.result as string));
     let jsonFile = fileReader.result as String;
-
+    localStorage.removeItem("testKey");
     window.sessionStorage.setItem("testKey", JSON.stringify(jsonFile));
 
 

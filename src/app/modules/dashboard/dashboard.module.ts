@@ -4,7 +4,7 @@ import { DashboardComponent } from './dashboard.component';
 import { TableComponent } from './table/table.component';
 import { RouterModule } from '@angular/router';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import {  MatTableModule } from '@angular/material/table';
+import {  MatTableModule,  } from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';

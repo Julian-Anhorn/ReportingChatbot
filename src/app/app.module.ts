@@ -38,7 +38,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatIconModule,
     MatListModule,
     MatPaginatorModule,
-    MatSortModule
+        MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
