@@ -19,10 +19,11 @@ import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
