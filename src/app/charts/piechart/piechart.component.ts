@@ -88,6 +88,13 @@ export class PiechartComponent implements OnInit {
         }]
     };
 
+
+    setTimeout(() => {
+      window.dispatchEvent(
+        new Event ('resize')
+      );
+    }, 300);
+
   }
 
 }
