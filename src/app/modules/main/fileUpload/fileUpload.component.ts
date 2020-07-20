@@ -13,6 +13,7 @@ export class FileUploadComponent{
    */
   onFileDropped($event) {
     this.prepareFilesList($event);
+
   }
 
   /**
@@ -64,6 +65,22 @@ export class FileUploadComponent{
       item.progress = 0;
       this.files.push(item);
     }
+
+
+    const fileReader = new FileReader();
+    fileReader.readAsText(this.files[0], "UTF-8");
+    fileReader.onload = () => {
+    let jsonFile = fileReader.result as String;
+    window.sessionStorage.removeItem("testKey");
+    window.sessionStorage.setItem("testKey", JSON.stringify(jsonFile));
+    }
+    fileReader.onerror = (error) => {
+    console.log(error);
+   }
+
+
+
+
     this.uploadFilesSimulator(0);
   }
 

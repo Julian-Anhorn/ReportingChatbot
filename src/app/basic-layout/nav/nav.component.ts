@@ -19,28 +19,6 @@ export class NavComponent {
   constructor(private breakpointObserver: BreakpointObserver) {}
 
 
-  selectedFile: File;
-
-
-  fileChange(file) {
-    this.selectedFile = file.target.files[0];
-    const fileReader = new FileReader();
-    fileReader.readAsText(this.selectedFile, "UTF-8");
-    fileReader.onload = () => {
-    console.log(JSON.parse(fileReader.result as string));
-    let jsonFile = fileReader.result as String;
-    localStorage.removeItem("testKey");
-    window.sessionStorage.setItem("testKey", JSON.stringify(jsonFile));
-
-
-
-    }
-    fileReader.onerror = (error) => {
-    console.log(error);
-   }
-
-  }
-
 
   }
 

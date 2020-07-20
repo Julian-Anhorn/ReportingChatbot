@@ -3,7 +3,6 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
 import { TableDataSource, TableItem } from './table-datasource';
-import importData from 'src/App/Data/data.json';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
@@ -19,7 +18,7 @@ export class TableComponent implements OnInit  {
 
 displayedColumns: string[] = ['Seite', 'Status', 'Aufrufe', 'Abspruenge'];
 dataSource:any;
-
+importData = sessionStorage.getItem("testKey");
 
 
 
@@ -28,11 +27,12 @@ dataSource:any;
 ngOnInit(): void {
 
   var element = {}, openItems = [];
+  let sessionData = JSON.parse(sessionStorage.getItem("testKey"));
+  let result = JSON.parse(sessionData).data;
 
-  importData.data.forEach(function(obj){
+  result.forEach(function(obj){
     if(obj[1]=="geöffnet"){
       openItems.push({"Seite": obj[2],"Status": obj[1], "Aufrufe": obj[3], "Abspruenge": obj[4]});
-
     }
     });
     this.dataSource = new MatTableDataSource(openItems);
@@ -46,7 +46,8 @@ ngOnInit(): void {
 onClickMe(){
   let sessionData = JSON.parse(sessionStorage.getItem("testKey"));
   let result = JSON.parse(sessionData).data;
-  this.dataSource = result;
+  console.log(result)
+  this.dataSource = this.importData;
 }
 }
 
