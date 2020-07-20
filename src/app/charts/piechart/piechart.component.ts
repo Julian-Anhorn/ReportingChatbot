@@ -14,9 +14,6 @@ export class PiechartComponent implements OnInit {
   constructor() { }
 
 
-   
-
-
   ngOnInit(): void {
     this.chartOptions = {
         chart: {
@@ -50,7 +47,7 @@ export class PiechartComponent implements OnInit {
           enabled:false,
         },
         exporting: {
-          enabled:true, 
+          enabled:true,
         },
         series: [{
             name: 'Brands',
