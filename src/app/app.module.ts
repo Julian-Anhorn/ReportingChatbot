@@ -17,19 +17,22 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
-
+import { MainModule } from './modules/main/main.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DashboardModule,
+    MainModule,
+    FormsModule,
     MatTableModule,
     LayoutModule,
     MatToolbarModule,
