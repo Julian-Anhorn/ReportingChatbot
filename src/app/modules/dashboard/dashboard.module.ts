@@ -1,3 +1,4 @@
+import { PiechartComponent } from './../../charts/piechart/piechart.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
@@ -12,12 +13,14 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+import { HighchartsChartModule } from 'highcharts-angular'
+
 
 
 
 @NgModule({
-  declarations: [DashboardComponent, TableComponent],
-  exports:[DashboardComponent, TableComponent],
+  declarations: [DashboardComponent, TableComponent, PiechartComponent],
+  exports:[DashboardComponent, TableComponent, PiechartComponent],
   imports: [
     CommonModule,
     MatPaginatorModule,
@@ -28,7 +31,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatSortModule,
     MatToolbarModule,
     MatTableModule,
-    RouterModule
+    RouterModule,
+    HighchartsChartModule
   ]
 })
 export class DashboardModule { }
