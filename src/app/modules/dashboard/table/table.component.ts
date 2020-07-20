@@ -18,7 +18,7 @@ export class TableComponent implements OnInit  {
 
 
 displayedColumns: string[] = ['Seite', 'Status', 'Aufrufe', 'Abspruenge'];
-dataSource = importData.data;
+dataSource:any;
 
 
 
@@ -39,7 +39,6 @@ ngOnInit(): void {
 
 
   this.dataSource.sort = this.sort;
-
   this.dataSource.paginator = this.paginator;
 
 }
