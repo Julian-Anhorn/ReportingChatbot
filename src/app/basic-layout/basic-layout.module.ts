@@ -12,25 +12,33 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
 import { DashboardComponent } from '../modules/dashboard/dashboard.component';
-import { TableComponent } from '../modules/dashboard/table/table.component';
-
+import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
+import { NavService } from './nav/nav.service';
+import { TopNavComponent } from './top-nav/top-nav.component';
+import {EventEmitter, Injectable} from '@angular/core';
+import {Event, NavigationEnd, Router} from '@angular/router';
+import {BehaviorSubject} from 'rxjs';
 
 
 @NgModule({
-  declarations: [NavComponent,DashboardComponent],
-  exports:[NavComponent,DashboardComponent],
+  declarations: [NavComponent,DashboardComponent,MenuListItemComponent,TopNavComponent],
+  exports:[NavComponent,DashboardComponent,TopNavComponent],
   imports: [
     CommonModule,
     LayoutModule,
     MatToolbarModule,
+    MatListModule,
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
     MatGridListModule,
+    MatMenuModule,
     MatCardModule,
     MatMenuModule,
     RouterModule
-  ]
+  ],
+  bootstrap: [NavComponent],
+  providers: [NavService]
 })
 export class BasicLayoutModule { }

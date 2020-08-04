@@ -19,12 +19,19 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MainModule } from './modules/main/main.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { TopNavComponent } from './basic-layout/top-nav/top-nav.component';
+import { MenuListItemComponent } from './basic-layout/menu-list-item/menu-list-item.component';
+import { NavService } from './basic-layout/nav/nav.service';
+import {EventEmitter, Injectable} from '@angular/core';
+import {Event, NavigationEnd, Router} from '@angular/router';
+import {BehaviorSubject} from 'rxjs';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
+    TopNavComponent,
+    MenuListItemComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatPaginatorModule,
         MatSortModule
   ],
-  providers: [],
+  providers: [NavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
