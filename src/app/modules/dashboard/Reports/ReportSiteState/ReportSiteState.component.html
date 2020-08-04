@@ -5,7 +5,9 @@
   </mat-toolbar>
 </p>
 
-<mat-table [dataSource]="dataSource" matSort>
+<mat-table matTableExporter [dataSource]="dataSource" #exporter="matTableExporter"  matSort>
+
+
   <!-- Seite Column -->
   <ng-container matColumnDef="Seite">
     <mat-header-cell *matHeaderCellDef class="Seite" mat-sort-header> Seite</mat-header-cell >
@@ -35,3 +37,6 @@
 
 </mat-table>
 <mat-paginator [pageSizeOptions]="[10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
+<div>
+<button mat-raised-button (click)="exporter.exportTable('xlsx', {fileName:'exportReport1', sheet: 'sheet_name', Props: {Author: 'Talha'}})">Excel</button>
+</div>

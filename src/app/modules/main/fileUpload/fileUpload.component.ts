@@ -15,8 +15,7 @@ export class FileUploadComponent{
   files: any[] = [];
 
 
-  constructor(private reportService:ReportService,    public router: Router
-    ){}
+  constructor(private reportService:ReportService,    public router: Router){}
 
   /**
    * on file drop handler
@@ -82,34 +81,34 @@ export class FileUploadComponent{
       this.files.push(item);
     }
 
-// ********* Post file to jsonServer **********//
-const fileReader = new FileReader();
-fileReader.readAsText(this.files[0], "UTF-8");
-fileReader.onload = () => {
-let jsonFile = fileReader.result as string;
-var jsonObject : any = JSON.parse(jsonFile)
+    // ********* Post file to jsonServer **********//
+    const fileReader = new FileReader();
+    fileReader.readAsText(this.files[0], "UTF-8");
+    fileReader.onload = () => {
+      let jsonFile = fileReader.result as string;
+      var jsonObject: any = JSON.parse(jsonFile)
 
 
-    let openItems=[];
-    let id=0;
+      let openItems = [];
+      let id = 0;
       var keys = Object.keys(jsonObject["data"]);
-      for(var i=0; i<keys.length; i++){
+      for (var i = 0; i < keys.length; i++) {
         id++;
-      let key = keys[i];
-      openItems.push({"id":id,"Seite":  jsonObject["data"][key][2],"Status":  jsonObject["data"][key][1], "Aufrufe": jsonObject["data"][key][3], "Abspruenge":  jsonObject["data"][key][4]});
+        let key = keys[i];
+        openItems.push({ "id": id, "Seite": jsonObject["data"][key][2], "Status": jsonObject["data"][key][1], "Aufrufe": jsonObject["data"][key][3], "Abspruenge": jsonObject["data"][key][4] });
       }
 
 
-    this.reportService.postData(openItems).subscribe((data: {}) => {
-      console.log("****POST***");
+      this.reportService.postData(openItems).subscribe((data: {}) => {
+        console.log("****POST***");
 
-    })
-  }
-  fileReader.onerror = (error) => {
-  console.log(error);
-  }
+      })
+    }
+    fileReader.onerror = (error) => {
+      console.log(error);
+    }
 
-  this.uploadFilesSimulator(0);
+    this.uploadFilesSimulator(0);
   }
 
 

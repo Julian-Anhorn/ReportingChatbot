@@ -14,6 +14,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { HighchartsChartModule } from 'highcharts-angular';
 import { ReportSiteStateComponent } from './Reports/ReportSiteState/ReportSiteState.component';
+import { MatTableExporterModule } from 'mat-table-exporter';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -24,6 +26,7 @@ import { ReportSiteStateComponent } from './Reports/ReportSiteState/ReportSiteSt
   imports: [
     CommonModule,
     MatPaginatorModule,
+    MatButtonModule,
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
@@ -32,6 +35,7 @@ import { ReportSiteStateComponent } from './Reports/ReportSiteState/ReportSiteSt
     MatToolbarModule,
     MatTableModule,
     RouterModule,
+    MatTableExporterModule,
     HighchartsChartModule
   ]
 })
