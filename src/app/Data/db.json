@@ -1,0 +1,2762 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/",
+      "Status": "geöffnet",
+      "Aufrufe": 800,
+      "Abspruenge": 11
+    },
+    {
+      "id": 2,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html",
+      "Status": "geöffnet",
+      "Aufrufe": 37,
+      "Abspruenge": 1
+    },
+    {
+      "id": 3,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/einstiegsmoeglichkeiten/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 23,
+      "Abspruenge": 3
+    },
+    {
+      "id": 4,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/ihre-arbeitswelt/zusammenarbeiten.jsp#anchor_standortkarte",
+      "Status": "geöffnet",
+      "Aufrufe": 21,
+      "Abspruenge": 0
+    },
+    {
+      "id": 5,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/ihr-start/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 14,
+      "Abspruenge": 2
+    },
+    {
+      "id": 6,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/gptw/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 10,
+      "Abspruenge": 1
+    },
+    {
+      "id": 7,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeiter-wmd-Project-Management-Office-Banking-de-j1373.html",
+      "Status": "geöffnet",
+      "Aufrufe": 8,
+      "Abspruenge": 0
+    },
+    {
+      "id": 8,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-Softwareentwicklung-Java-de-j65.html",
+      "Status": "geöffnet",
+      "Aufrufe": 7,
+      "Abspruenge": 0
+    },
+    {
+      "id": 9,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/",
+      "Status": "geschlossen",
+      "Aufrufe": 6,
+      "Abspruenge": 2
+    },
+    {
+      "id": 10,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/ihre-entwicklung/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 5,
+      "Abspruenge": 0
+    },
+    {
+      "id": 11,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Software-Tester-wmd-fuer-die-adesso-insurance-solutions-de-j996.html",
+      "Status": "geöffnet",
+      "Aufrufe": 5,
+      "Abspruenge": 2
+    },
+    {
+      "id": 12,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Praktikant-wmd-Softwareentwicklung-Java-de-j113.html",
+      "Status": "geöffnet",
+      "Aufrufe": 5,
+      "Abspruenge": 4
+    },
+    {
+      "id": 13,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html",
+      "Status": "geschlossen",
+      "Aufrufe": 5,
+      "Abspruenge": 0
+    },
+    {
+      "id": 14,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-Softwareentwicklung-wmd-de-j1294.html",
+      "Status": "geöffnet",
+      "Aufrufe": 4,
+      "Abspruenge": 1
+    },
+    {
+      "id": 15,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Software-Engineer-wmd-Java-de-j1270.html",
+      "Status": "geöffnet",
+      "Aufrufe": 4,
+      "Abspruenge": 1
+    },
+    {
+      "id": 16,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Initiativbewerbung-wmd-de-f225.html",
+      "Status": "geöffnet",
+      "Aufrufe": 4,
+      "Abspruenge": 0
+    },
+    {
+      "id": 17,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Programm-Manager-wmd-Strategisches-Projektmanagemen-de-j1251.html",
+      "Status": "geöffnet",
+      "Aufrufe": 4,
+      "Abspruenge": 1
+    },
+    {
+      "id": 18,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-Java-de-j1345.html",
+      "Status": "geöffnet",
+      "Aufrufe": 4,
+      "Abspruenge": 2
+    },
+    {
+      "id": 19,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/faqs/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 4,
+      "Abspruenge": 1
+    },
+    {
+      "id": 20,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-im-IT-Consulting-de-j615.html",
+      "Status": "geöffnet",
+      "Aufrufe": 4,
+      "Abspruenge": 1
+    },
+    {
+      "id": 21,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-fuer-Bachelor-Master-oder-Projektarbeiten--de-f64.html",
+      "Status": "geöffnet",
+      "Aufrufe": 4,
+      "Abspruenge": 0
+    },
+    {
+      "id": 22,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-im-IT-Consulting-de-f615.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 23,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Handel-de-j872.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 24,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/HR-Business-Partner-wmd-de-j1290.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 25,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Duales-Studium-zum-Bachelor-of-Science-und-Fachinformatike-de-j67.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 26,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-fuer-Abschlussarbeiten-im-Bereich-Big-Data-de-j1320.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 27,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Initiativbewerbung-wmd-de-j225.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 28,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/einstiegsmoeglichkeiten/index.jsp",
+      "Status": "geschlossen",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 29,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-NET-de-j417.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 30,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 31,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 32,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 33,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 34,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 35,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 36,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 37,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 38,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 39,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 40,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 41,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 42,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 43,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 44,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 45,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 46,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 47,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 48,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 49,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 50,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 51,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 52,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 53,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 54,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 55,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 56,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 57,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 58,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 59,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 60,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 61,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 62,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 63,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 64,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 65,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 66,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 67,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 68,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 69,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 70,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 71,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 72,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 73,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 74,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 75,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 76,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 77,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 78,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 79,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 80,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 81,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 82,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 83,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 84,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 85,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 86,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 87,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 88,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 89,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 90,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 91,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 92,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 93,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 94,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 95,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 96,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 97,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 98,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 99,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 100,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 101,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 102,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 103,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 104,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 105,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 106,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 107,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 108,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 109,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 110,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 111,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 112,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 113,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 114,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 115,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 116,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 117,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 118,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 119,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 120,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 0
+    },
+    {
+      "id": 121,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-de-j220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 2
+    },
+    {
+      "id": 122,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-j168.html",
+      "Status": "geöffnet",
+      "Aufrufe": 3,
+      "Abspruenge": 1
+    },
+    {
+      "id": 123,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/adesso-school-of-coding-and-software-engineering/index.jsp?pk_source=Facebook&pk_medium=Anzeige&pk_campaign=adesso+stipendien+XU",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 1
+    },
+    {
+      "id": 124,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Ausbildung-zum-Fachinformatiker-wmd-Anwendungsentwicklung-de-j1218.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 125,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-Customer-Experience-Management-Digitalis-de-j1295.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 1
+    },
+    {
+      "id": 126,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?order[dir]=desc&order[field]=aufgabengebiete",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 127,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-de-f95.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 128,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consultant-Project-Management-OfficeRequire-de-f359.html?sid=9e97f30fc68deda58ec3a31d28b172c1",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 129,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/standorte/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 130,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-HR-wmd-Personalbetreuung-de-j1360.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 131,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/ihre-arbeitswelt/zusammenarbeiten.jsp#anchor_standortkarte",
+      "Status": "geschlossen",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 132,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-fuer-Abschlussarbeiten-im-Bereich-Big-Data-de-f1320.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 133,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Praktikant-wmd-Recruiting-ab-August-2020-fuer-6-Monate-de-j1282.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 1
+    },
+    {
+      "id": 134,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Leiter-wmd-Competence-Center-Softwareentwicklung-Java-de-j59.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 135,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-Testmanagement-de-j124.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 136,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/JavaScript-Entwickler-wmd-de-f514.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 137,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Digitalisierung-KreditZahlungsverkeh-de-j1314.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 138,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Personalreferent-wmd-Recruiting-de-j908.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 139,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Schuelerpraktikanten-wmd-de-j268.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 140,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Personalreferent-wmd-Recruiting-de-f908.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 141,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/einstiegsmoeglichkeiten/software-development.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 142,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-NET-de-j417.html",
+      "Status": "geschlossen",
+      "Aufrufe": 2,
+      "Abspruenge": 1
+    },
+    {
+      "id": 143,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-Customer-Experience-Management-Digitalis-de-f1295.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 144,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?start=100",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 145,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Software-Architekt-wmd-NET-de-j82.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 146,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-de-j1272.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 147,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/adesso-school-of-coding-and-software-engineering/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 148,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Business-Analyst-wmd-Querschnittssysteme-fuer-die-Provisio-de-f1244.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 149,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/JavaScript-Entwickler-wmd-de-j514.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 150,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-de-f95.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 151,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Schuelerpraktikanten-wmd-de-f268.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 152,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Ausbildung-zum-Fachinformatiker-wmd-Anwendungsentwicklung-de-f1218.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 153,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-de-f95.html?agid=29",
+      "Status": "geschlossen",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 154,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Consultant-wmd-SAP-ABAP-de-j165.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 155,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-de-j95.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 156,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Projektmanager-wmd-de-j137.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 0
+    },
+    {
+      "id": 157,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Agile-Coach-Agilist-wmd-de-j975.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 1
+    },
+    {
+      "id": 158,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Business-Analyst-wmd-Querschnittssysteme-fuer-die-Provisio-de-j1244.html",
+      "Status": "geöffnet",
+      "Aufrufe": 2,
+      "Abspruenge": 1
+    },
+    {
+      "id": 159,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=673158f98ae4b7cf1ac99baf74dec317",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 160,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Account-Manager-Public-wmd-de-j1361.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 161,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Software-Tester-wmd-fuer-die-adesso-health-solutions-de-j1322.html?sid=948d567dadad62a5abc608c45d21f472",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 162,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Initiativbewerbung-wmd-de-f225.html?sid=34a6796026922dd8d5d3c8b5c527410d",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 163,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Leiter-wmd-Competence-Center-IT-Consulting-de-j241.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 164,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Projektmanager-wmd-de-f137.html?sid=8421b76772f34ef6718b2c27342be014",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 165,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Duales-Studium-zum-Bachelor-of-Science-Informatik-oder-Inf-de-j378.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 166,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Personalreferent-wmd-Recruiting-de-j908.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 167,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Agiler-Business-Analyst-wmd-Versicherung-de-f919.html?sid=ca3a3c694734be6c2974c8dc4033b754",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 168,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Berufsbegleitendes-Studium-zum-Bachelor-of-Science-Informa-de-j939.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 169,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=9eb13780ac66db36989ea8c0b2f499b5",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 170,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Berufsbegleitendes-Studium-zum-Master-of-Science-Big-Data--de-j940.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 171,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Service-Delivery-Manager-wmd-fuer-die-adesso-as-a-service-de-f438.html?sid=eaed6e8daac7c74d2737b3c72373aa8d",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 172,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=fdd62dd630be053ca04dfb1519eefcd0",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 173,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeiter-wmd-Project-Management-Office-Banking-de-j1373.html?sid=85cde5a7339d9af3b81bc8eb2791c072",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 174,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Inside-Sales-Specialist-wmd-de-f1174.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 175,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=39eaf06eefe3ec0862e80cc9cedd4ff1",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 176,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Projektmanager-Banking-wmd-de-j425.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 177,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Platform-Manager-wmd-Amazon-Web-Services-AWS-Cloud-de-f1381.html?agid=29&app_visitor_id=2F683B8E85159A4A-400007F660F10E49&report_suite_id=stepstone-android-global&fromApp=true",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 178,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/HR-Business-Partner-wmd-de-f1290.html?sid=7806504303f26f8a8626d78571afaba8",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 179,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consultant-Project-Management-OfficeRequire-de-j359.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 180,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Projektleiter-wmd-Softwareentwicklung-Java-de-f97.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 181,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=94274c5540c0817222ba2103914527a3",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 182,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeiter-wmd-Project-Management-Office-Banking-de-f1373.html?sid=c2058350fc51004fa32caf4d58a70a35",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 183,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeiter-wmd-Project-Management-Office-Banking-de-f1373.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 184,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=db5194f20106f5e542bae3fab35d80c9",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 185,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Account-Manager-wmd-de-f850.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 186,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-IT-Consultant-wmd-de-f156.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 187,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-NET-de-f417.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 188,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Software-Entwickler-wmd-mit-versierten-Mathe-Skills-fuer-d-de-j1316.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 189,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-Softwareentwicklung-Java-de-j65.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 190,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/ihre-arbeitswelt/zusammenarbeiten.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 191,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Salesforce-CRM-de-f566.html?sid=c0b77b89a5075797301fc85e3cd5933e",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 192,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Business-Consultant-wmd-Healthcare-de-j178.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 193,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Agiler-Business-Analyst-wmd-Versicherung-de-f919.html?sid=ca3a3c694734be6c2974c8dc4033b754",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 194,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Managementberatung-de-f591.html?sid=5c71ad15bab54e4d65c4692bb2090472",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 195,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Cloud-Engineer-wmd-fuer-die-adesso-as-a-service-de-f681.html?sid=c74895480ea7df2470da8629fa682547",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 196,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Digitalisierung-KreditZahlungsverkeh-de-f1314.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 197,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Duales-Studium-zum-Master-of-Science-im-Bereich-Technologi-de-j379.html?sid=l0teut5rhbq8h31er6r5icpmn0",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 198,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/SAP-Basis-Administrator-wmd-de-f997.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 199,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?start=200",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 200,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/sheforit/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 201,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Teamleiter-wmd-Salesforce-de-f825.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 202,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Digitalisierung-KreditZahlungsverkeh-de-f1314.html?sid=a8e3ecbe4d288272e99cd3f25fd2381e",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 203,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=39eaf06eefe3ec0862e80cc9cedd4ff1",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 204,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Projektmanager-wmd-fuer-internationale-Software-Projekte-i-de-f1221.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 205,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-JavaScript-de-f703.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 206,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-Project-Management-Office-de-f321.html?sid=0f4fc222e5cd4478c6972cbc1a8b12b2",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 207,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-f181.html?sid=8041a280d78e36cd4fd01c133d16528f",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 208,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-Cloud-IoT-und-Industrie-40-Ja-de-j891.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 209,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Manager-wmd-Mergers-Acquisitions-MA-de-j1376.html?sid=78ec48e860643d75c16c973d86dd29cd",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 210,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-Softwareentwicklung-Java-de-f65.html?sid=a6bc6911874eef0a4aa72a8b03ae7f64",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 211,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-IT-Consultant-wmd-de-f156.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 212,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-Digitalisierung-wmd-de-j956.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 213,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Data-Scientist-wmd-de-f500.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 214,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-fuer-Abschlussarbeiten-im-Bereich-Big-Data-de-f1320.html?sid=b6ebe799248e6626e60dbc2653feb646",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 215,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-DevOps-Engineering-de-j1229.html?fbclid=IwAR1km4_2ik4-nCKXiBYTJ5mYtPe5RHy0WJvsZ8yY3VHpnJQXCrxLWOadJdk",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 216,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Tester-QS-Spezialist-wmd-fuer-die-adesso-i-de-j774.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 217,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-mw-Management-und-Organisationsberatung--de-j136.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 218,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=9d66002ad8a65b5c5a3062bd7af4c764",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 219,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/einstiegsmoeglichkeiten/zentrale-bereiche.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 220,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-de-f95.html?sid=c4cb7e5f0e767f853b39c1f9c6de32bd",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 221,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-de-f1272.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 222,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Agiler-Business-Analyst-wmd-Versicherung-de-j919.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 223,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeitender-wmd-IT-Support-de-j1044.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 224,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-Digitalisierung-wmd-de-f956.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 225,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Consultant-wmd-Project-Management-Office-Banking-de-j1373.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 226,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Management-Consultant-wmd-Healthcare-de-f136.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 227,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Duales-Studium-zum-Bachelor-Master-of-Science-Informatik-de-j497.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 228,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Handel-de-f1249.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 229,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-IT-Consultant-wmd-Sourcing-Service-Management-de-f129.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 230,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/ihre-arbeitswelt/zusammenarbeiten.jsp",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 231,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=972e083c0c90f9840cb8076d26305c8c",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 232,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-fuer-Bachelor-Master-oder-Projektarbeiten--de-j64.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 233,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-fuer-die-adesso-Trans-de-j1375.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 234,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebot.html?yid=816",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 235,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-Softwareentwicklung-Net-de-j1018.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 236,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?order[dir]=desc&order[field]=aufgabengebiete&filter[taetigkeit_id][]=7&filter[taetigkeit_id][]=3&filter[volltext]=",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 237,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Duales-Studium-zum-Bachelor-of-Science-mit-Schwerpunkt-Sys-de-j1031.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 238,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Agile-Coach-Agilist-wmd-de-f975.html?sid=4f5692c89f4287b56ae6ec98c12c40c6",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 239,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Manager-wmd-Mergers-Acquisitions-MA-de-j1376.html?sid=f2104c01db96252646732e577f91de75",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 240,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?start=100&filter[countr][]=K%C3%B6ln&filter[volltext]=",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 241,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/einstiegsmoeglichkeiten/software-development.jsp?utm_source=Facebook&utm_medium=Anzeige&utm_campaign=Java-Webseitenklicks",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 242,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-Digital-Marketing-de-j1371.html?sid=ebf9eecabefc0242df489327cb1c6941",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 243,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Software-Engineer-wmd-Java-de-f93.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 244,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-Java-de-f1345.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 245,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-mw-IT-Consulting--de-f181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 246,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Competence-Center-Leitung-wmd-Java-de-j1292.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 247,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consultant-Project-Management-OfficeRequire-de-f359.html?sid=9e97f30fc68deda58ec3a31d28b172c1",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 248,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-Customer-Experience-Management-Digitalis-de-j1295.html?sid=4c89fd537baff6a1ef46e968480e2f29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 249,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Testanalyst-wmd-fuer-die-adesso-insurance-solutions-de-j580.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 250,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Service-Delivery-Manager-wmd-fuer-die-adesso-as-a-service-de-f438.html?sid=eaed6e8daac7c74d2737b3c72373aa8d",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 251,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Competence-Center-Leitung-wmd-Java-de-j1292.html?sid=2f2ddcf512c8224208bead4f4f674bd3",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 252,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Software-Engineer-wmd-Java-de-f1270.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 253,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?start=100&sid=bb99eedffff3e3cb3f394b392122199b",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 254,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-Java-de-j96.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 255,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Analyst-wmd-IT-Consulting-de-j181.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 256,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Frontend-Entwickler-mwd-Produktframework-Inhouse-fuer-die--de-j1202.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 257,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-fuer-Bachelor-Master-oder-Projektarbeiten--de-f64.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 258,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Projektleiter-mwd-Anwendungsmodernisierung-fuer-die-de-f1155.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 259,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-Banken-de-f134.html?sid=774c5b635afed891f8e3a3a4ea47f6b0",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 260,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Berufsbegleitendes-Studium-zum-Master-of-Science-IT-Manage-de-j941.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 261,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Prozessberatung-fuer-Customer-Relati-de-j166.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 262,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Initiativbewerbung-wmd-de-j225.html?sid=80ee829a2b902035cfa8fb5127a90a3d",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 263,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Netzwerkadministrator-wmd-IT-Betrieb-de-f1211.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 264,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=d1c0d341bc619964661a9c56feb6ac0a",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 265,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Application-Security-Engineer-wmd-de-j732.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 266,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-SAP-MM-SD-PP-de-j575.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 267,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-fuer-Abschlussarbeiten-im-Bereich-Big-Data-de-j1320.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 268,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-DeveloperNET-wmd-fuer-internationale-Kunde-de-j1220.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 269,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Application-Security-Engineer-wmd-de-f732.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 270,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-NET-de-f417.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 271,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=7a5e9a4a4a6f4de62f933ca9ee22009a",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 272,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/einstiegsmoeglichkeiten/gptw/weiterbilden.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 273,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Praktikant-wmd-Recruiting-ab-August-2020-fuer-6-Monate-de-j1282.html?sid=27e87947276e15e67504694e9dc2b417",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 274,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Scrum-Product-Owner-wmd-Software-Entwicklungsprojekte-de-f168.html?sid=d5c3c32075c600749f0d9592a5f2d714",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 275,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Organisationsberatung-mit-Schwerpunk-de-f141.html?agid=29&report_suite_id=stepstone-iphoneapp-global&fromApp=true",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 276,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-fuer-die-adesso-Trans-de-j1375.html?sid=bf6c6d6b2f1d61680ba6dd82e6d0ff37",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 277,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/einstiegsmoeglichkeiten/software-development.jsp",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 278,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-fuer-die-adesso-Trans-de-j1375.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 279,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Handel-de-j872.html?sid=7599617843d9ad204d4b03546e75aeab",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 280,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-de-f180.html?sid=25a44a2d8138377c2fb438eeaebba878",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 281,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-Digitalisierung-wmd-de-j956.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 282,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/verschiedene-formate/abschlussarbeiten/themen.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 283,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Data-Technology-Specialist-wmd-de-f1209.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 284,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?start=100&filter[countr][]=M%C3%BCnchen&filter[taetigkeit_id][]=5&filter[taetigkeit_id][]=4&filter[volltext]=",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 285,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-IT-Security-Expert-wmd-fuer-die-adesso-as-a-service-de-j649.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 286,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Data-Scientist-wmd-de-j500.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 287,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-Softwareentwicklung-Java-de-f65.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 288,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/SAP-Basis-Administrator-wmd-de-j997.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 289,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/verschiedene-formate/adesso-health-solutions-gmbh.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 290,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=c3a40935b1a410c5528956ed6060d56a",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 291,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/System-Engineer-wmd-fuer-den-Bereich-Cloud-fuer-die-adesso-de-j894.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 292,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=803ae3913a45575dba18fcfd3c3dec70",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 293,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-Data-Scientist-Insurance-wmd-de-f974.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 294,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Teamleitung-wmd-Faktura-und-Vertraege-de-j1363.html?sid=ba449479f99613b930cbc7d5d8a85b60",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 295,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-SAP-Analytics-Consultant-de-j838.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 296,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=ea83f465d928e49e3855572d32620de3",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 297,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-IT-Consultant-wmd-betriebliche-Altersversorgung-bAV-de-j921.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 298,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-JavaScript-de-j703.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 299,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-im-Human-Resources-Management-de-f1261.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 300,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-de-j180.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 301,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Projektleiter-Einfuehrungsprojekte-wmd-fuer-die-adesso-ins-de-f1076.html?sid=f6a829b374fadb81902791dc30e71abe",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 302,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Initiativbewerbung-wmd-de-j225.html?sid=80ee829a2b902035cfa8fb5127a90a3d",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 303,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Application-Security-Engineer-wmd-de-f732.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 304,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=6a0fc6059176b77b1d377db638473031",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 305,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Recruiter-wmd-Direct-Search-de-f814.html?sid=a28376f609c41d0de6f8d21e67f94189",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 306,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Azure-DevOps-Engineer-wmd-de-j1291.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 307,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Data-Technology-Specialist-wmd-de-f1209.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 308,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeiter-Software-Support-wmd-fuer-die-adesso-insurance-de-j1378.html?agid=alert",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 309,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Account-Manager-wmd-bAV-de-j1351.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 310,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Requirements-Engineer-wmd-de-f120.html?sid=f92615ec9fd9148008f68c567055d805",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 311,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Projektleiter-Einfuehrungsprojekte-wmd-fuer-die-adesso-ins-de-f1076.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 312,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeiter-wmd-Project-Management-Office-Banking-de-j1373.html?sid=85cde5a7339d9af3b81bc8eb2791c072",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 313,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Data-Engineer-Data-Warehouse-ETL-und-Cloud-wmd-de-f499.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 314,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-Project-Management-Office-de-j321.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 315,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/SAP-Basis-Administrator-wmd-de-f997.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 316,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeiter-wmd-Project-Management-Office-Banking-de-j1373.html?sid=60fe70f927a9523a1efb769cac30a13f",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 317,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-DevOps-Engineering-de-f1229.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 318,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/ihr-start/index.jsp",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 319,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebot.html?yid=321",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 320,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-SAP-Analytics-Consultant-de-f838.html?sid=c618bdd2c3238cd2b2ebd9a0bb3ae808",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 321,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=bfdc73e9705e07d109058c196a93cf96",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 322,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-Softwareentwicklung-Net-de-j1018.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 323,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Entwickler-wmd-Schwerpunkt-Java-fuer-die-a-de-j969.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 324,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/ihre-arbeitswelt/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 325,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-im-IT-Betrieb-wmd-de-j1067.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 326,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-als-UX-Professional-de-j164.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 327,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Duales-Studium-zum-Bachelor-Master-of-Science-Informatik-de-j497.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 328,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-fuer-die-adesso-Transformer-GmbH-de-j1359.html?sid=136e815054463e91db5044e091cfcbbd",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 329,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-Consultant-wmd-als-UX-Professional-de-j164.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 330,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Mitarbeiter-wmd-Project-Management-Office-Banking-de-f1373.html?sid=c2058350fc51004fa32caf4d58a70a35",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 331,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-mw-Management-und-Organisationsberatung--de-j136.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 332,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Personalreferent-wmd-Recruiting-de-f908.html?agid=29",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 333,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Praktikant-wmd-Softwareentwicklung-Java-de-f113.html?sid=a6caf96b40f426fad39002dd3e75b0e3",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 334,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-fr-Abschlussarbeiten-im-Bereich-Big-Data-u-de-f1320.html?agid=30&utm_source=Indeed&utm_medium=organic&utm_campaign=Indeed",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 335,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=39bcfb453c98f71b510e3b2d8381decf",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 336,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/faqs/index.jsp#accordeaon-tab-content-255821-2",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 337,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Initiativbewerbung-wmd-de-f225.html?sid=e2697f02fb5f8694e6d7012c01306214",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 338,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Consultant-mw-Salesforce-CRM-de-j566.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 339,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=a3d49b3134ef061dc0d643c2875c5fca",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 340,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Berufsbegleitendes-Studium-zum-Master-of-Science-Big-Data--de-j940.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 341,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=3e945ab9e4302d02b166e252022051cc",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 342,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Mobile-Application-Developer-Android-fmd-de-j556.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 343,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consulting-fuer-die-adesso-Transformer-GmbH-de-j1359.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 344,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?order[dir]=asc&order[field]=country_str",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 345,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/verschiedene-formate/abschlussarbeiten/index.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 346,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=18672c7e2a251563e9b2ce4d1c6657df",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 347,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/SAS-Data-Engineer-wmd-de-j433.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 348,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Duales-Studium-zum-Bachelor-Master-of-Science-Informatik-de-f497.html?sid=b2484603ed3b2feb01f149b38f8f3ed1",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 349,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-Customer-Experience-Management-Digitalis-de-f1295.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 350,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Projektmanager-wmd-HR-Digitalisierung-de-j1318.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 351,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Vertriebsassistenz-wmd-fuer-kundenindividuelle-IT-Loesunge-de-f1349.html?sid=72825080e8bfccd5e2c72de1479a955a",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 352,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Projektleiter-wmd-de-j1369.html?sid=e6bc782c369c1982307b01ea24058195",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 353,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-mw-IT-Consultant-Project-Management-OfficeRequirem-de-j359.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 354,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Agile-Product-OwnerScrum-Master-wmd-de-j889.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 355,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Account-Manager-wmd-bAV-de-f1351.html?sid=3df4b4fd2b1aebd5372195b51afd2a41",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 356,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-Customer-Experience-Management-Digitalis-de-f1295.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 357,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Praktikant-wmd-Softwareentwicklung-Java-de-f113.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 358,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-Softwareentwicklung-Java-de-f95.html?sid=4a3774b4f58e81bd42dace91ed39452c",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 359,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Software-Tester-wmd-fuer-die-adesso-insurance-solutions-de-j996.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 360,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Requirements-Engineer-wmd-de-f120.html?agid=29",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 361,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-wmd-im-Human-Resources-Management-de-j1261.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 362,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=31046a9fd865aed554733d487ecb74ad",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 363,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-mwd-im-Bereich-Lektorat-de-j1358.html?sid=e5a402b1442f53aa539047425c265b37",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 364,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Junior-Web-Entwickler-wmd-de-j962.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 365,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Referent-Unternehmenskommunikation-wmd-de-f1286.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 366,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Werkstudent-Softwareentwicklung-wmd-fuer-die-adesso-Transf-de-j1367.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 367,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Trainee-wmd-IT-Consultant-Project-Management-OfficeRequire-de-f359.html?sid=a8093cc339bfb501e64656a8bf3ea98d",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 368,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Teamleiter-wmd-IT-Consulting-im-Bereich-Sicherheits-Infras-de-j1305.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 369,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=bf02aadb2d23912d0c0f91d9a941f1f4",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 370,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Praktikant-wmd-Softwareentwicklung-Java-de-f113.html?sid=70efffd251f0f2435fae4050a8ee12fb",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 371,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-Salesforce-CRM-de-j566.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 372,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Projektleiter-wmd-Microsoft-Advisory-de-f87.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 373,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/IT-System-EngineerArchitectAdministrator-wmd-fuer-die-ades-de-j550.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 374,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Migrations-Spezialist-mwd-Hostumgebungen-de-f912.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 375,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Proposal-Manager-wmd-de-j1110.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 376,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/einstiegsmoeglichkeiten/it-consulting.jsp",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 377,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Referent-Unternehmenskommunikation-wmd-de-j1286.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 378,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-im-Bereich-SAP-Security-GRC-Berechti-de-f1107.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 379,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-wmd-SAP-MM-SD-PP-de-j575.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 380,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Vertriebsassistenz-wmd-fuer-kundenindividuelle-IT-Loesunge-de-j1349.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 381,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=286ee2cef5f66e13cdd8e09a853f3bd4",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 382,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Software-Engineer-wmd-Java-de-f1345.html?sid=dc753b221550147021031cbb8a33dcde",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 383,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Junior-Java-Entwickler-wmd-de-j960.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 384,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebot.html?yid=268",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 385,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?start=100",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 386,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Consultant-Customer-Experience-Management-Digitalis-de-f1295.html?sid=b4bd00b6f3da4d58b0d9abe8f4c8b7c8",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 387,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Senior-Testanalyst-wmd-de-j237.html",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 388,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/stellenangebote.html?sid=ed4f3a82af42a6c6eaf5bbf6062eb4d9",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 389,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Netzwerkadministrator-wmd-IT-Betrieb-de-f1211.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 390,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Account-Manager-wmd-Energiewirtschaft-de-f851.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 391,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/sheforit/index.jsp",
+      "Status": "geschlossen",
+      "Aufrufe": 1,
+      "Abspruenge": 1
+    },
+    {
+      "id": 392,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Business-Analyst-Datenmigration-Versicherung-mwd-fuer-die--de-f1308.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 393,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Business-Analyst-Datenmigration-Versicherung-mwd-fuer-die--de-f1308.html",
+      "Status": "geöffnet",
+      "Aufrufe": 1,
+      "Abspruenge": 0
+    },
+    {
+      "id": 394,
+      "Seite": "https://www.adesso.de/de/jobs-karriere/unsere-stellenangebote/Business-Analyst-Datenmigration-Versicherung-mwd-fuer-die--de-f1308.html",
+      "Status": "geöffnet",
+      "Aufrufe": 33,
+      "Abspruenge": 0
+    }
+  ]
+}

@@ -30,22 +30,15 @@ export class ReportSiteStateComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.reportService.getById(1).subscribe(data => {
-      console.log(data)
-    })
+
 
 
     this.reportService.getAll().subscribe(data => {
 
-          let openItems = [];
 
-          data.forEach(function(innerObj){
-            if(innerObj[1]=="geöffnet"){
 
-              openItems.push({"Seite": innerObj[2],"Status": innerObj[1], "Aufrufe": innerObj[3], "Abspruenge": innerObj[4]});
-            }
-            });
-        this.dataSource.data = openItems;
+
+        this.dataSource.data = data;
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
     });

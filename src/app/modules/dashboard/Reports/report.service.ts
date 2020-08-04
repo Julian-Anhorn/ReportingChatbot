@@ -1,20 +1,22 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { retry } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
+import { retry, catchError } from 'rxjs/operators';
+import { LowdbAsync } from 'lowdb';
+import * as lowdb from 'lowdb';
+import * as FileAsync from 'lowdb/adapters/FileAsync';
+
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ReportService {
 
+
+
   baseURL = "http://localhost:3000/data";
 
-   // Http Options
-   httpOptions = {
-
-
-  }
 
   constructor(private httpClient: HttpClient) { }
 
@@ -25,15 +27,27 @@ export class ReportService {
  postData(employee:any): Observable<any> {
   const headers = { 'content-type': 'application/json'}
   const body=employee;
-  return this.httpClient.post(this.baseURL, body,{'headers':headers})
+  return this.httpClient.post<any>(this.baseURL, body,{'headers':headers})
 }
 getById(id:number ): Observable<any> {
-  id=1;
-  return this.httpClient.get<any>(`${this.baseURL}/${id}`);
+ return this.httpClient.get(this.baseURL)
+
 }
 
-delete(): Observable<any[]>{
-  console.log("los");
-  return this.httpClient.delete<any[]>("http://localhost:3000/data/1");
+deleteAll(id:number): Observable<any[]>{
+
+  return this.httpClient.delete<any[]>("http://localhost:3000/data/"+id);
+}
+
+handleError(error) {
+  let errorMessage = '';
+  if (error.error instanceof ErrorEvent) {
+      // client-side error
+      errorMessage = `Error: ${error.error.message}`;
+  } else {
+      // server-side error
+      errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`;
+  }
+  return errorMessage;
 }
 }

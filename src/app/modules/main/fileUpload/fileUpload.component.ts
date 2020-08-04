@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ReportService } from '../../dashboard/Reports/report.service';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { timeout } from 'rxjs/operators';
 
 @Component({
   selector: 'app-fileupload',
@@ -11,6 +13,8 @@ import { Router } from '@angular/router';
 
 export class FileUploadComponent{
   files: any[] = [];
+
+
   constructor(private reportService:ReportService,    public router: Router
     ){}
 
@@ -59,53 +63,55 @@ export class FileUploadComponent{
       }
     }, 1000);
   }
+  deleteFiles(numberOfFiles:number){
+
+    for(var cnt=0; cnt<numberOfFiles; cnt++){
+      console.log("Delete")
+    this.reportService.deleteAll(cnt).subscribe();
+  }
+}
 
   /**
    * Convert Files list to normal array list
    * @param files (Files List)
    */
   prepareFilesList(files: Array<any>) {
+
     for (const item of files) {
       item.progress = 0;
       this.files.push(item);
     }
 
-    const fileReader = new FileReader();
-    fileReader.readAsText(this.files[0], "UTF-8");
-    fileReader.onload = () => {
-    let jsonFile = fileReader.result as string;
-    var jsonObject : any = JSON.parse(jsonFile)
+// ********* Post file to jsonServer **********//
+const fileReader = new FileReader();
+fileReader.readAsText(this.files[0], "UTF-8");
+fileReader.onload = () => {
+let jsonFile = fileReader.result as string;
+var jsonObject : any = JSON.parse(jsonFile)
+
 
     let openItems=[];
     let id=0;
       var keys = Object.keys(jsonObject["data"]);
       for(var i=0; i<keys.length; i++){
         id++;
-      var key = keys[i];
-      openItems.push({ "id":id,"Seite":  jsonObject["data"][key][2],"Status":  jsonObject["data"][key][1], "Aufrufe": jsonObject["data"][key][3], "Abspruenge":  jsonObject["data"][key][4]});
+      let key = keys[i];
+      openItems.push({"id":id,"Seite":  jsonObject["data"][key][2],"Status":  jsonObject["data"][key][1], "Aufrufe": jsonObject["data"][key][3], "Abspruenge":  jsonObject["data"][key][4]});
       }
 
-        console.log("string"+openItems)
 
     this.reportService.postData(openItems).subscribe((data: {}) => {
+      console.log("****POST***");
 
     })
-
-
-
-
-
-    }
-
-    fileReader.onerror = (error) => {
-    console.log(error);
-   }
-
-
-
-
-    this.uploadFilesSimulator(0);
   }
+  fileReader.onerror = (error) => {
+  console.log(error);
+  }
+
+  this.uploadFilesSimulator(0);
+  }
+
 
   /**
    * format bytes

@@ -9,7 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "mock:server": "json-server —- watch Data/data.json"
-
   },
   "private": true,
   "dependencies": {
@@ -24,11 +23,13 @@
     "@angular/platform-browser": "~10.0.0",
     "@angular/platform-browser-dynamic": "~10.0.0",
     "@angular/router": "~10.0.0",
+    "@types/lowdb": "^1.0.9",
     "datatables.net": "^1.10.21",
     "datatables.net-dt": "^1.10.21",
     "highcharts": "^8.1.2",
     "highcharts-angular": "^2.4.0",
     "jquery": "^3.5.1",
+    "lowdb": "^1.0.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
