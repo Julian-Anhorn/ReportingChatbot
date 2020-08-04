@@ -24,16 +24,24 @@ export class ReportSiteStateComponent implements OnInit {
   dataSource = new MatTableDataSource<any>();
 
 
-  constructor(private reportService:ReportService){
+  constructor(private reportService: ReportService){
   }
 
 
   ngOnInit(): void {
+
+    this.reportService.getById(1).subscribe(data => {
+      console.log(data)
+    })
+
+
     this.reportService.getAll().subscribe(data => {
-          let element = {};
+
           let openItems = [];
+
           data.forEach(function(innerObj){
             if(innerObj[1]=="geöffnet"){
+
               openItems.push({"Seite": innerObj[2],"Status": innerObj[1], "Aufrufe": innerObj[3], "Abspruenge": innerObj[4]});
             }
             });

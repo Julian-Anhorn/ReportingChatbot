@@ -1,12 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { ReportService } from '../../dashboard/Reports/report.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-fileupload',
   templateUrl: './fileUpload.component.html',
   styleUrls: ['./fileUpload.component.scss']
 })
+
+
 export class FileUploadComponent{
   files: any[] = [];
+  constructor(private reportService:ReportService,    public router: Router
+    ){}
 
   /**
    * on file drop handler
@@ -41,13 +47,11 @@ export class FileUploadComponent{
 
         return;
       } else {
-        console.log(this.files[index].progress);
         const progressInterval = setInterval(() => {
           if (this.files[index].progress === 100) {
             clearInterval(progressInterval);
             this.uploadFilesSimulator(index + 1);
           } else {
-            console.log(this.files[index].progress);
 
             this.files[index].progress += 5;
           }
@@ -66,14 +70,33 @@ export class FileUploadComponent{
       this.files.push(item);
     }
 
-
     const fileReader = new FileReader();
     fileReader.readAsText(this.files[0], "UTF-8");
     fileReader.onload = () => {
-    let jsonFile = fileReader.result as String;
-    window.sessionStorage.removeItem("testKey");
-    window.sessionStorage.setItem("testKey", JSON.stringify(jsonFile));
+    let jsonFile = fileReader.result as string;
+    var jsonObject : any = JSON.parse(jsonFile)
+
+    let openItems=[];
+    let id=0;
+      var keys = Object.keys(jsonObject["data"]);
+      for(var i=0; i<keys.length; i++){
+        id++;
+      var key = keys[i];
+      openItems.push({ "id":id,"Seite":  jsonObject["data"][key][2],"Status":  jsonObject["data"][key][1], "Aufrufe": jsonObject["data"][key][3], "Abspruenge":  jsonObject["data"][key][4]});
+      }
+
+        console.log("string"+openItems)
+
+    this.reportService.postData(openItems).subscribe((data: {}) => {
+
+    })
+
+
+
+
+
     }
+
     fileReader.onerror = (error) => {
     console.log(error);
    }
