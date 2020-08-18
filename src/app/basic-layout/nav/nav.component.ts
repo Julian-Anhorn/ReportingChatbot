@@ -33,7 +33,7 @@ export class NavComponent implements OnInit{
           {
             displayName: 'Report1',
             iconName: 'poll',
-            route: '/Report1',
+            route: '/CCO/Report1',
               },  {
               displayName: 'Report2',
               iconName: 'poll',

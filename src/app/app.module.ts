@@ -25,6 +25,7 @@ import { NavService } from './basic-layout/nav/nav.service';
 import {EventEmitter, Injectable} from '@angular/core';
 import {Event, NavigationEnd, Router} from '@angular/router';
 import {BehaviorSubject} from 'rxjs';
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import {BehaviorSubject} from 'rxjs';
     MainModule,
     FormsModule,
     MatTableModule,
+    HighchartsChartModule,
     LayoutModule,
     MatToolbarModule,
     MatFormFieldModule,

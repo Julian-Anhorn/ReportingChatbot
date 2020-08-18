@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ReportService } from '../../dashboard/Reports/report.service';
+import { ReportService } from '../../dashboard/Reports/CCO/report.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { timeout } from 'rxjs/operators';
@@ -99,10 +99,19 @@ export class FileUploadComponent{
       }
 
 
-      this.reportService.postData(openItems).subscribe((data: {}) => {
-        console.log("****POST***");
+      this.reportService.deleteAll(0).subscribe((data: {}) => {
+        console.log("****Delete***");
 
       })
+
+        setTimeout(() => {
+          this.reportService.postData(openItems).subscribe((data: {}) => {
+            console.log("****Post***");
+
+          })
+        }, 3000);
+
+
     }
     fileReader.onerror = (error) => {
       console.log(error);

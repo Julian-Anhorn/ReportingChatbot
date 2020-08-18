@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { NavComponent } from './basic-layout/nav/nav.component';
 import { MainComponent } from './modules/main/main.component';
+import { ReportSiteStateComponent } from './modules/dashboard/Reports/CCO/ReportSiteState/ReportSiteState.component';
+import { ReportMessagesComponent } from './modules/dashboard/Reports/Onlim/ReportMessages/ReportMessages.component';
 
 
 const routes: Routes = [{
@@ -11,8 +13,14 @@ const routes: Routes = [{
 
 },
 {
-  path: 'Report1',
-  component: DashboardComponent
+  path: 'CCO/Report1',
+  component: ReportSiteStateComponent
+
+
+},
+{
+  path: 'Onlim/Report1',
+  component: ReportMessagesComponent
 }];
 
 @NgModule({

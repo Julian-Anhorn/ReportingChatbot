@@ -12,17 +12,18 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSortModule } from '@angular/material/sort';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { HighchartsChartModule } from 'highcharts-angular';
-import { ReportSiteStateComponent } from './Reports/ReportSiteState/ReportSiteState.component';
+import { HighchartsChartModule } from "highcharts-angular";
 import { MatTableExporterModule } from 'mat-table-exporter';
 import { MatButtonModule } from '@angular/material/button';
+import { ReportSiteStateComponent } from './Reports/CCO/ReportSiteState/ReportSiteState.component';
+import { ReportMessagesComponent } from './Reports/Onlim/ReportMessages/ReportMessages.component';
 
 
 
 
 @NgModule({
-  declarations: [DashboardComponent,ReportSiteStateComponent, PiechartComponent],
-  exports:[DashboardComponent, ReportSiteStateComponent, PiechartComponent],
+  declarations: [DashboardComponent,ReportSiteStateComponent,PiechartComponent,ReportMessagesComponent],
+  exports:[DashboardComponent, ReportSiteStateComponent, ReportMessagesComponent,PiechartComponent],
   imports: [
     CommonModule,
     MatPaginatorModule,
