@@ -1,0 +1,28 @@
+<mat-progress-spinner style="margin:0 auto;" mode="indeterminate" *ngIf="IsWait">
+</mat-progress-spinner>
+
+<mat-form-field appearance="fill">
+  <mat-label>Enter a date range</mat-label>
+  <mat-date-range-input [formGroup]="range" [rangePicker]="picker"  >
+    <input matStartDate formControlName="start" placeholder="Start date"  (dateChange)="setStartDate('change', $event)">
+    <input matEndDate formControlName="end" placeholder="End date"  (dateChange)="setEndDate('change', $event)">
+  </mat-date-range-input>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-date-range-picker #picker  ></mat-date-range-picker>
+
+
+
+
+</mat-form-field>
+
+
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+
+<ng-container *ngIf="chartOptions">
+
+<highcharts-chart
+  [Highcharts]="Highcharts"
+  [options]="chartOptions"
+  style="width: 80%; height: 500px; display: block;"
+></highcharts-chart>

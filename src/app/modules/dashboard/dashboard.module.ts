@@ -20,12 +20,15 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import { ReportDailyConversationsComponent } from './Reports/Onlim/ReportConversations/ReportDailyConversations/ReportDailyConversations.component';
+import { ReportMothlyConversationsComponent } from './Reports/Onlim/ReportConversations/ReportMonthlyConversations/ReportMonthlyConversations.component';
+import { ReportHourlyConversationsComponent } from './Reports/Onlim/ReportConversations/ReportHourlyConversations/ReportHourlyConversations.component';
 
 
 
 
 @NgModule({
-  declarations: [DashboardComponent,ReportSiteStateComponent,PiechartComponent,ReportConversationsComponent,ReportMessagesComponent],
+  declarations: [DashboardComponent,ReportSiteStateComponent,PiechartComponent,ReportConversationsComponent,ReportMessagesComponent,ReportDailyConversationsComponent,ReportMothlyConversationsComponent,ReportHourlyConversationsComponent],
   exports:[DashboardComponent, ReportSiteStateComponent, ReportMessagesComponent,PiechartComponent],
   imports: [
     CommonModule,
@@ -39,6 +42,8 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatToolbarModule,
     MatTableModule,
     RouterModule,
+    MatDatepickerModule,
+
     MatProgressSpinnerModule,
     MatTableExporterModule,
     HighchartsChartModule,
