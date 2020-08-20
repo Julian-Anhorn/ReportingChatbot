@@ -1,16 +1,16 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
-import { OnlimReportService } from './onlimReport.service';
+import { ReportService } from './onlimReport.service';
 
 describe('Service: OnlimReport', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [OnlimReportService]
+      providers: [ReportService]
     });
   });
 
-  it('should ...', inject([OnlimReportService], (service: OnlimReportService) => {
+  it('should ...', inject([ReportService], (service: ReportService) => {
     expect(service).toBeTruthy();
   }));
 });

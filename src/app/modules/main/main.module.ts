@@ -8,7 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 import { DndDirective } from './fileUpload/dnd.directive';
 import { ProgressComponent } from './fileUpload/progress/progress.component';
-
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -18,6 +18,8 @@ import { ProgressComponent } from './fileUpload/progress/progress.component';
     CommonModule,
     MatButtonModule,
     MatToolbarModule,
+    MatProgressSpinnerModule,
+
     RouterModule
   ]
 })

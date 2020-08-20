@@ -22,6 +22,8 @@ export class ReportMessagesComponent implements OnInit {
   newData;
   updateFlag = false;
   chartOptions: Options
+  IsWait=true;
+
 
   constructor(private reportService: ReportService){
   }
@@ -36,11 +38,19 @@ export class ReportMessagesComponent implements OnInit {
         ))
         this.newData.forEach(element => {
             this.dataMap.Total +=  element["filteredData"].length
+            this.dataMap.Jan +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Januar").length
+            this.dataMap.Feb +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Februar").length
+            this.dataMap.Mar +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "März").length
+            this.dataMap.Apr +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "April").length
             this.dataMap.May +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Mai").length
             this.dataMap.Jun +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Juni").length
             this.dataMap.Jul +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Juli").length
             this.dataMap.Aug +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "August").length
             this.dataMap.Sep +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "September").length
+            this.dataMap.Oct +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Oktober").length
+            this.dataMap.Nov +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "November").length
+            this.dataMap.Dec +=  element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Dezember").length
+
 
       }
       )
@@ -54,7 +64,7 @@ export class ReportMessagesComponent implements OnInit {
           text: "Gesamt:"+this.dataMap.Total,
           align: 'center'},
         xAxis:{
-          categories:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+          categories:["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
        },
        series: [
         {
@@ -64,6 +74,7 @@ export class ReportMessagesComponent implements OnInit {
       }
     ]}
       this.updateFlag = true;
+      this.IsWait =false;
     }
 
 
