@@ -26,6 +26,7 @@ IsWait=true;
 toppings = new FormControl();
 startDate;
 endDate;
+average=0.0;
 
 constructor(private reportService: ReportService){
 }
@@ -37,24 +38,56 @@ ngOnInit(): void {
   this.reportService.getAll().subscribe(data => {
     const result = data.map(item => Object.values(item));
 
-    this.jsonData=result.map(element => ({
-      filteredData: element[0].filter(value =>value["sender"]["type"]!="bot"),
-    }
-      ))
+    // this.jsonData=result.map(element => ({
+    //   filteredData: element[0].filter(value =>value["sender"]["type"]!="bot"),
+    // }
+      // ))
+      this.jsonData=result
+      let month;
       this.jsonData.forEach(element => {
+        try{
+       month = moment(element[0][0]['created_at']).format('MMMM')
+        }catch(e){
 
-        this.dataMap.Jan.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Januar"))
-        this.dataMap.Feb.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Februar"))
-        this.dataMap.Mar.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "März"))
-        this.dataMap.Apr.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "April"))
-        this.dataMap.May.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Mai"))
-        this.dataMap.Jun.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Juni"))
-        this.dataMap.Jul.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Juli"))
-        this.dataMap.Aug.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "August"))
-        this.dataMap.Sep.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "September"))
-        this.dataMap.Oct.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Oktober"))
-        this.dataMap.Nov.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "November"))
-        this.dataMap.Dec.push(element["filteredData"].filter(value =>  moment(value["created_at"]).format('MMMM') === "Dezember"))
+        }
+        switch (month) {
+          case 'Januar':
+            this.dataMap.Jan.push(element)
+            break;
+          case 'März':
+            this.dataMap.Feb.push(element)
+            break;
+          case 'April':
+            this.dataMap.Apr.push(element)
+            break;
+          case 'Mai':
+            this.dataMap.May.push(element)
+            break;
+          case 'Juni':
+            this.dataMap.Jun.push(element)
+            break;
+          case 'Juli':
+            this.dataMap.Jul.push(element)
+            break;
+          case 'August':
+            this.dataMap.Aug.push(element)
+            break;
+          case 'September':
+            this.dataMap.Sep.push(element)
+            break;
+          case 'Oktober':
+            this.dataMap.Oct.push(element)
+            break;
+          case 'November':
+            this.dataMap.Nov.push(element)
+            break;
+          case 'Dezember':
+            this.dataMap.Dec.push(element)
+            break;
+          default:
+
+        }
+
     }
     )
     this.dataMap.Jan =   this.dataMap.Jan.filter(value =>  value.length> 0)
@@ -72,14 +105,14 @@ ngOnInit(): void {
 
     this.dataMap = [
     this.dataMap.Jan.length,
-   this.dataMap.Feb.length,
+    this.dataMap.Feb.length,
     this.dataMap.Mar.length,
     this.dataMap.Apr.length,
-   this.dataMap.May.length,
+    this.dataMap.May.length,
     this.dataMap.Jun.length,
     this.dataMap.Jul.length,
-   this.dataMap.Aug.length,
-   this.dataMap.Sep.length,
+    this.dataMap.Aug.length,
+    this.dataMap.Sep.length,
     this.dataMap.Oct.length,
     this.dataMap.Nov.length,
     this.dataMap.Dec.length]
@@ -95,8 +128,13 @@ setEndDate(type: string, event: MatDatepickerInputEvent<Date>) {
   console.log(this.startDate+"-"+this.endDate)
   this.updateData()
 }
+setAverage(){
+  this.average=2.2;
+}
+
 updateData(){
 }
+
 updateChart(range,data) {
 
   console.log(data[0].data)
@@ -106,7 +144,7 @@ updateChart(range,data) {
   },
 
     title: {
-      text: "Gesamt:"+ this.jsonData.length,
+      text: "Gesamt:"+ this.jsonData.length+"   "+ "Ø:"+this.average,
       align: 'center'},
       exporting: {
         buttons: {

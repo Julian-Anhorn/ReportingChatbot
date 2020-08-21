@@ -13,7 +13,6 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 })
 export class ReportConversationsComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error("Method not implemented.");
   }
 
 

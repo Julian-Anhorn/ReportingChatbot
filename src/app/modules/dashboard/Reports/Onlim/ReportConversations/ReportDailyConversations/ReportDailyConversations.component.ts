@@ -33,16 +33,11 @@ export class ReportDailyConversationsComponent implements OnInit {
  }
 
  ngOnInit(): void {
-   this.dataMap = {"Jan":[],"Feb":[],"Mar":[],"Apr":[],"May":[],"Jun":[],"Jul":[],"Aug":[],"Sep":[],"Oct":[],"Nov":[],"Dec":[]}
-   let range=["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
 
    this.reportService.getAll().subscribe(data => {
      const result = data.map(item => Object.values(item));
 
-     this.jsonData=result.map(element => ({
-       filteredData: element[0].filter(value =>value["sender"]["type"]!="bot"),
-     }
-       ))
+     this.jsonData=result
       this.getWeekData();
 
    });
@@ -64,15 +59,41 @@ export class ReportDailyConversationsComponent implements OnInit {
   let range=["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
 
 
-  this.jsonData.forEach(element => {
 
-    this.dataMap.Montag.push(element["filteredData"].filter(value => moment(value["created_at"]).format('dddd') === "Montag"))
-    this.dataMap.Dienstag.push(element["filteredData"].filter(value => moment(value["created_at"]).format('dddd') === "Dienstag"))
-    this.dataMap.Mittwoch.push(element["filteredData"].filter(value => moment(value["created_at"]).format('dddd') === "Mittwoch"))
-    this.dataMap.Donnerstag.push(element["filteredData"].filter(value => moment(value["created_at"]).format('dddd') === "Donnerstag"))
-    this.dataMap.Freitag.push(element["filteredData"].filter(value => moment(value["created_at"]).format('dddd') === "Freitag"))
-    this.dataMap.Samstag.push(element["filteredData"].filter(value => moment(value["created_at"]).format('dddd') === "Samstag"))
-    this.dataMap.Sonntag.push(element["filteredData"].filter(value => moment(value["created_at"]).format('dddd') === "Sonntag"))
+
+    let day;
+    this.jsonData.forEach(element => {
+      try{
+        day = moment(element[0][0]['created_at']).format('dddd')
+      }catch(e){
+
+      }
+      switch (day) {
+        case 'Montag':
+          this.dataMap.Montag.push(element)
+          break;
+        case 'Dienstag':
+          this.dataMap.Dienstag.push(element)
+          break;
+        case 'Mittwoch':
+          this.dataMap.Mittwoch.push(element)
+          break;
+        case 'Donnerstag':
+          this.dataMap.Donnerstag.push(element)
+          break;
+        case 'Freitag':
+          this.dataMap.Freitag.push(element)
+          break;
+        case 'Samstag':
+          this.dataMap.Samstag.push(element)
+          break;
+        case 'Sonntag':
+          this.dataMap.Sonntag.push(element)
+          break;
+        default:
+
+      }
+
   })
 
   this.dataMap=[
@@ -112,7 +133,11 @@ export class ReportDailyConversationsComponent implements OnInit {
            }
          },
          xAxis:{
+          offset:0,
+
+
           labels: {
+
             style: {
                 fontSize:'15px'
             }},

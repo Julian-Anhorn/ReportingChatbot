@@ -31,16 +31,12 @@ export class ReportHourlyConversationsComponent implements OnInit {
  }
 
  ngOnInit(): void {
-   this.dataMap = {"Jan":[],"Feb":[],"Mar":[],"Apr":[],"May":[],"Jun":[],"Jul":[],"Aug":[],"Sep":[],"Oct":[],"Nov":[],"Dec":[]}
-   let range=["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
+
 
    this.reportService.getAll().subscribe(data => {
      const result = data.map(item => Object.values(item));
 
-     this.jsonData=result.map(element => ({
-       filteredData: element[0].filter(value =>value["sender"]["type"]!="bot"),
-     }
-       ))
+      this.jsonData=result;
       this.getDailyData();
 
    });
@@ -90,31 +86,101 @@ export class ReportHourlyConversationsComponent implements OnInit {
    ]
 
 
-   this.jsonData.forEach(element => {
-     this.dataMap.h00.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "0"))
-     this.dataMap.h01.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "1"))
-     this.dataMap.h02.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "2"))
-     this.dataMap.h03.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "3"))
-     this.dataMap.h04.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "4"))
-     this.dataMap.h05.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "5"))
-     this.dataMap.h06.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "6"))
-     this.dataMap.h07.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "7"))
-     this.dataMap.h08.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "8"))
-     this.dataMap.h09.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "9"))
-     this.dataMap.h10.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "10"))
-     this.dataMap.h11.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "11"))
-     this.dataMap.h12.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "12"))
-     this.dataMap.h13.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "13"))
-     this.dataMap.h14.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "14"))
-     this.dataMap.h15.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "15"))
-     this.dataMap.h16.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "16"))
-     this.dataMap.h17.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "17"))
-     this.dataMap.h18.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "18"))
-     this.dataMap.h19.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "19"))
-     this.dataMap.h20.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "20"))
-     this.dataMap.h21.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "21"))
-     this.dataMap.h22.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "22"))
-     this.dataMap.h23.push(element["filteredData"].filter(value => moment(value["created_at"]).format('H') === "23"))
+    let hour;
+    this.jsonData.forEach(element => {
+      try{
+        hour = moment(element[0][0]['created_at']).format('H')
+      }catch(e){
+
+      }
+
+    switch (hour) {
+      case '0':
+        this.dataMap.h00.push(element);
+        break;
+      case '1':
+        this.dataMap.h01.push(element);
+        break;
+      case '2':
+        this.dataMap.h02.push(element);
+        break;
+      case '3':
+        this.dataMap.h03.push(element);
+        break;
+      case '4':
+        this.dataMap.h04.push(element);
+        break;
+      case '5':
+        this.dataMap.h05.push(element);
+        break;
+      case '6':
+        this.dataMap.h06.push(element);
+        break;
+      case '7':
+        this.dataMap.h07.push(element);
+        break;
+      case '8':
+        this.dataMap.h08.push(element);
+        break;
+      case '9':
+        this.dataMap.h09.push(element);
+        break;
+      case '10':
+        this.dataMap.h10.push(element);
+        break;
+      case '11':
+        this.dataMap.h11.push(element);
+        break;
+      case '12':
+        this.dataMap.h12.push(element);
+        break;
+
+      case '13':
+        this.dataMap.h13.push(element);
+        break;
+
+      case '14':
+        this.dataMap.h14.push(element);
+        break;
+
+      case '15':
+        this.dataMap.h15.push(element);
+        break;
+
+      case '16':
+        this.dataMap.h16.push(element);
+        break;
+
+      case '17':
+        this.dataMap.h17.push(element);
+        break;
+
+      case '18':
+        this.dataMap.h18.push(element);
+        break;
+
+      case '19':
+        this.dataMap.h19.push(element);
+        break;
+
+      case '20':
+        this.dataMap.h20.push(element);
+        break;
+
+      case '21':
+        this.dataMap.h21.push(element);
+        break;
+
+      case '22':
+        this.dataMap.h22.push(element);
+        break;
+
+      case '23':
+        this.dataMap.h23.push(element);
+
+        break;
+      default:
+    }
    })
 
    this.dataMap=[
