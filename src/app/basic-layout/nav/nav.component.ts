@@ -45,13 +45,18 @@ export class NavComponent implements OnInit{
         route: '',
         children: [
           {
-            displayName: 'Nachrichten',
+            displayName: 'Intents',
             iconName: 'assessment',
-            route: 'Onlim/Report1',
+            route: 'Onlim/Report3',
+              },
+          {
+            displayName: 'Konversationen',
+            iconName: 'assessment',
+            route: 'Onlim/Report2',
               },  {
-              displayName: 'Konversationen',
+              displayName: 'Nachrichten',
               iconName: 'assessment',
-              route: 'Onlim/Report2',
+              route: 'Onlim/Report1',
 
             }]}]
 

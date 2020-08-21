@@ -18,6 +18,8 @@ import 'moment/locale/de';
 export class ReportMessagesComponent implements OnInit {
 
   dataMap = {"Total":0,"Jan":0,"Feb":0,"Mar":0,"Apr":0,"May":0,"Jun":0,"Jul":0,"Aug":0,"Sep":0,"Oct":0,"Nov":0,"Dec":0}
+  range=["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
+
   Highcharts: typeof Highcharts = Highcharts;
   newData;
   updateFlag = false;
@@ -54,28 +56,62 @@ export class ReportMessagesComponent implements OnInit {
 
       }
       )
-      this.updateData();
+      this.updateChart(this.range,"");
     });
   }
 
-    updateData() {
+
+
+    updateChart(range,data) {
+
       this.chartOptions={
+        rangeSelector: {
+          selected: 1
+      },
+
         title: {
           text: "Gesamt:"+this.dataMap.Total,
           align: 'center'},
+          exporting: {
+            buttons: {
+              contextButton: {
+                symbolStroke: '#efefef',
+                theme: {
+                  fill: 'grey'
+                }
+              }
+            }
+          },
         xAxis:{
-          categories:["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
+          labels: {
+            style: {
+                fontSize:'15px'
+            }},
+          categories:range,
+          crosshair: true
+
        },
+       yAxis: {
+        title: {
+          text: ''
+       }},
        series: [
         {
           name:'Anzahl',
           type: 'area',
-          data:[this.dataMap.Jan,this.dataMap.Feb,this.dataMap.Mar,this.dataMap.Apr,this.dataMap.May,this.dataMap.Jun,this.dataMap.Jul,this.dataMap.Aug,this.dataMap.Sep,this.dataMap.Oct,this.dataMap.Nov,this.dataMap.Dec]
+          data:[this.dataMap.Jan,this.dataMap.Feb,this.dataMap.Mar,this.dataMap.Apr,this.dataMap.May,this.dataMap.Jun,this.dataMap.Jul,this.dataMap.Aug,this.dataMap.Sep,this.dataMap.Oct,this.dataMap.Nov,this.dataMap.Dec],
+          color: "#774251",
+
+        //  data:[data.Jan.length,data.Feb.length,data.Mar.length,data.Apr.length,data.May.length,data.Jun.length,data.Jul.length,data.Aug.length,data.Sep.length,data.Oct.length,data.Nov.length,data.Dec.length]
       }
-    ]}
-      this.updateFlag = true;
-      this.IsWait =false;
+    ],
+
+
+  }
+  this.updateFlag = true;
+  this.IsWait=false;
+}
+
+
     }
 
-
-        }

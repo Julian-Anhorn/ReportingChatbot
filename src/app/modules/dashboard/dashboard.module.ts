@@ -23,12 +23,15 @@ import {MatNativeDateModule} from '@angular/material/core';
 import { ReportDailyConversationsComponent } from './Reports/Onlim/ReportConversations/ReportDailyConversations/ReportDailyConversations.component';
 import { ReportMothlyConversationsComponent } from './Reports/Onlim/ReportConversations/ReportMonthlyConversations/ReportMonthlyConversations.component';
 import { ReportHourlyConversationsComponent } from './Reports/Onlim/ReportConversations/ReportHourlyConversations/ReportHourlyConversations.component';
+import { ReportIntentsComponent } from './Reports/Onlim/ReportIntents/ReportIntents.component';
+import { ReportIntentsUsageComponent } from './Reports/Onlim/ReportIntents/ReportIntentsUsage/ReportIntentsUsage.component';
+import { ReportMissingAnswerComponent } from './Reports/Onlim/ReportIntents/ReportMissingAnswer/ReportMissingAnswer.component';
 
 
 
 
 @NgModule({
-  declarations: [DashboardComponent,ReportSiteStateComponent,PiechartComponent,ReportConversationsComponent,ReportMessagesComponent,ReportDailyConversationsComponent,ReportMothlyConversationsComponent,ReportHourlyConversationsComponent],
+  declarations: [DashboardComponent,ReportSiteStateComponent,PiechartComponent,ReportConversationsComponent,ReportMessagesComponent,ReportDailyConversationsComponent,ReportMothlyConversationsComponent,ReportHourlyConversationsComponent,ReportIntentsComponent,ReportIntentsUsageComponent,ReportMissingAnswerComponent],
   exports:[DashboardComponent, ReportSiteStateComponent, ReportMessagesComponent,PiechartComponent],
   imports: [
     CommonModule,

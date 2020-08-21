@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import * as moment from 'moment';
-import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { FormGroup, FormControl } from '@angular/forms';
 import * as Highcharts from 'highcharts';
+import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { ReportService } from '../../Onlimreport.service';
+import * as moment from 'moment';
 
 @Component({
-  selector: 'app-ReportMonthly',
-  templateUrl: './ReportMonthlyConversations.component.html',
-  styleUrls: ['./ReportMonthlyConversations.component.css']
+  selector: 'app-ReportIntentsUsage',
+  templateUrl: './ReportIntentsUsage.component.html',
+  styleUrls: ['./ReportIntentsUsage.component.scss']
 })
-export class ReportMothlyConversationsComponent implements OnInit {
+export class ReportIntentsUsageComponent implements OnInit {
+
 //dataMap = {"Total":0,"Jan":0,"Feb":0,"Mar":0,"Apr":0,"May":0,"Jun":0,"Jul":0,"Aug":0,"Sep":0,"Oct":0,"Nov":0,"Dec":0}
 dataMap ;
 range = new FormGroup({
@@ -38,11 +39,11 @@ ngOnInit(): void {
   this.reportService.getAll().subscribe(data => {
     const result = data.map(item => Object.values(item));
 
-    // this.jsonData=result.map(element => ({
-    //   filteredData: element[0].filter(value =>value["sender"]["type"]!="bot"),
-    // }
-      // ))
-      this.jsonData=result
+    this.jsonData=result.map(element => ({
+      filteredData: element[0].filter(value =>value["sender"]["type"]!="bot"),
+    }
+      ))
+
       let month;
       this.jsonData.forEach(element => {
         try{
@@ -134,8 +135,6 @@ setAverage(){
 
 updateData(){
 
-
-
 }
 
 updateChart(range,data) {
@@ -182,9 +181,6 @@ updateChart(range,data) {
     //  data:[data.Jan.length,data.Feb.length,data.Mar.length,data.Apr.length,data.May.length,data.Jun.length,data.Jul.length,data.Aug.length,data.Sep.length,data.Oct.length,data.Nov.length,data.Dec.length]
   }
 ],
-
-
-
 }
   this.updateFlag = true;
   this.IsWait=false;
@@ -192,4 +188,5 @@ updateChart(range,data) {
 
 
     }
+
 

@@ -1,0 +1,20 @@
+.mat-table{
+  width: 100%;
+}
+
+.mat-column-created_at{
+  flex: 0 0 10%;
+}
+.mat-column-Seite{
+  flex: 0 0 40%;
+}
+.mat-column-id{
+  flex: 0 0 20%;
+
+}
+.mat-row:nth-child(n+1){
+  background-color: #f0f0f0;
+}
+.mat-row:not(:nth-child(2n+1)){
+  background-color:#ffffff;
+}

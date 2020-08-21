@@ -91,9 +91,7 @@ export class ReportDailyConversationsComponent implements OnInit {
           this.dataMap.Sonntag.push(element)
           break;
         default:
-
       }
-
   })
 
   this.dataMap=[
