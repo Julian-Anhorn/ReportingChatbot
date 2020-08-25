@@ -5,7 +5,7 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { ReportService } from '../../Onlimreport.service';
 import * as moment from 'moment';
 import { Options } from 'highcharts';
-
+import IntentsFile from 'src/app/Data/Intents.json'
 @Component({
   selector: 'app-ReportIntentsUsage',
   templateUrl: './ReportIntentsUsage.component.html',
@@ -58,25 +58,86 @@ ngOnInit(): void {
 
 
       })
-
-
       var counts=[]
-      var finalData = []
-      this.nData.forEach(function(x) {
 
-        if((counts.some(item => item.name == ""+x+"") == false)){
-          var temp ={name:x, y:0}
+      this.nData.forEach(function(x) {
+        if(IntentsFile.find(item => item.uid == ""+x+"")!=undefined){
+          var realName=IntentsFile.find(item => item.uid == ""+x+"").name
+        }
+
+        if((counts.some(item => item.name == ""+realName+"") == false)){
+          var temp ={name:realName, y:0}
+
           counts.push(temp)
         }
         if(x != null){
-          counts.find(item => item.name == ""+x+"").y+=1
+          counts.find(item => item.name == ""+realName+"").y+=1
         }
-
       });
       ;
-      counts.sort((a, b) => (a.y > b.y) ? 1 : -1)
+      let sum_count=0
+      sum_count+=counts.find(item => item.name == "Dialog_StartOfferSearch").y
+      sum_count+=counts.find(item => item.name == "Dialog_OffersearchStart_B").y
+      sum_count+=counts.find(item => item.name == "Dialog_OffersearchStart_AB").y
+      sum_count+=counts.find(item => item.name == "Dialog_OffersearchStart_A").y
+      sum_count+=counts.find(item => item.name == "Dialog_OffersearchStart_AC").y
+      sum_count+=counts.find(item => item.name == "Dialog_OfferSearchStart_BC").y
+      sum_count+=counts.find(item => item.name == "Dialog_OffersearchStart_C").y;
+      var temp ={name:"Stellensuche", y:sum_count}
+      counts.push(temp)
 
-    this.updateChart(range,counts);
+
+        counts=counts.filter(item => item.name != "Dialog_StartOfferSearch");
+        counts=counts.filter(item => item.name != "Dialog_OffersearchStart_B");
+        counts=counts.filter(item => item.name != "Dialog_OffersearchStart_AB");
+        counts=counts.filter(item => item.name != "Dialog_OffersearchStart_A");
+        counts=counts.filter(item => item.name != "Dialog_OffersearchStart_AC");
+        counts=counts.filter(item => item.name != "Dialog_OfferSearchStart_BC")
+        counts=counts.filter(item => item.name != "Dialog_OffersearchStart_C")
+        counts=counts.filter(item => item.name !="Dialog_OfferSearchJobtyp_")
+        counts=counts.filter(item => item.name !="Dialog_OffersearchJobTyp")
+        counts=counts.filter(item => item.name !="Dialog_OffersearchLocation")
+        counts=counts.filter(item => item.name !="Dialog_OffersearchJobField")
+        counts=counts.filter(item => item.name !="Dialog_OffersearchJobTyp_Specific")
+        counts=counts.filter(item => item.name !="Dialog_OfferSearch_A_B_AC")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_C_B_AC")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_CAB")
+        counts=counts.filter(item => item.name !="Datalayer_Offer_B")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_B_C_AB")
+        counts=counts.filter(item => item.name !="Dialog_OffersearchJobField - fallback")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_BAC_Specific")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_C_AB_C")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_B")
+        counts=counts.filter(item => item.name !="Dialog_OfferSearch_AC_B")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_CAB_Specific")
+        counts=counts.filter(item => item.name !="Datalayer_Offer")
+        counts=counts.filter(item => item.name !="Dialog_OffersearchLocation_Trainee")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_BCA")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_C_A_BC")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_BCA_Specific")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_C_B_AC - fallback")
+        counts=counts.filter(item => item.name !="Datalayer_Offer_A")
+        counts=counts.filter(item => item.name !="Dialog_OffersearchLocation - fallback")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_C_A_BC - fallback")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_BCA - fallback")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_B - fallback")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_BCA_Specific - fallback")
+        counts=counts.filter(item => item.name !="Dialog_OffersearchJobTyp- fallback")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_CAB - fallback")
+        counts=counts.filter(item => item.name !="Datalayer_Offer_ABC")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_B_C_AB - fallback")
+        counts=counts.filter(item => item.name !="Dialog_Offersearch_A_CAB_Specific - fallback")
+        counts=counts.filter(item => item.name !="Dialog_OfferSearch_AC_B - fallback")
+        counts=counts.filter(item => item.name !="Dialog_OfferSearch_A_B_AC - fallback")
+
+
+
+
+
+      counts.sort((a, b) => (a.y > b.y) ? 1 : -1)
+      counts= counts.slice(counts.length-10, counts.length+1);
+      counts.reverse()
+    this.updateChart(counts);
   });
 }
 setStartDate(type: string, event: MatDatepickerInputEvent<Date>) {
@@ -95,19 +156,19 @@ updateData(){
 
 }
 
-updateChart(range,data) {
-  data= data.slice(data.length-10, data.length+1);
+updateChart(data:any[]) {
 
 
   var pieColors = (function () {
     var colors = [],
-        base = Highcharts.getOptions().colors[0],
+    base = "#774251",
+
         i;
 
     for (i = 0; i < 10; i += 1) {
         // Start out with a darkened base color (negative brighten), and end
         // up with a much brighter color
-        colors.push(Highcharts.color(base).brighten((i - 8) / 7).get());
+        colors.push(Highcharts.color(base).brighten((i-4) / 15).get());
     }
     return colors;
 }());
@@ -123,10 +184,10 @@ updateChart(range,data) {
         type: 'pie'
     },
     title: {
-        text: 'Top-10 URL´s'
+        text: 'Top-10 Intents<br>'
     },
     tooltip: {
-        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        pointFormat: '<b>{point.y}</b>; <b>{point.percentage:.1f}%</b>'
     },
     accessibility: {
         point: {
@@ -142,6 +203,10 @@ updateChart(range,data) {
             dataLabels: {
                 enabled: true,
                 format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                  backgroundColor: '#FCFFC5',
+                  fontSize:'13px'
+              }
 
             }
         }
@@ -153,9 +218,10 @@ updateChart(range,data) {
       enabled:true,
     },
     series: [{
-        name: 'Brands',
+        name: 'Anteil',
         colorByPoint: true,
         data: (data)
     }]
 };
+this.IsWait=false
 }}

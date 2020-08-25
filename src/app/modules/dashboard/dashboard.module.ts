@@ -1,4 +1,3 @@
-import { PiechartComponent } from './../../charts/piechart/piechart.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard.component';
@@ -31,8 +30,8 @@ import { ReportMissingAnswerComponent } from './Reports/Onlim/ReportIntents/Repo
 
 
 @NgModule({
-  declarations: [DashboardComponent,ReportSiteStateComponent,PiechartComponent,ReportConversationsComponent,ReportMessagesComponent,ReportDailyConversationsComponent,ReportMothlyConversationsComponent,ReportHourlyConversationsComponent,ReportIntentsComponent,ReportIntentsUsageComponent,ReportMissingAnswerComponent],
-  exports:[DashboardComponent, ReportSiteStateComponent, ReportMessagesComponent,PiechartComponent],
+  declarations: [DashboardComponent,ReportSiteStateComponent,ReportConversationsComponent,ReportMessagesComponent,ReportDailyConversationsComponent,ReportMothlyConversationsComponent,ReportHourlyConversationsComponent,ReportIntentsComponent,ReportIntentsUsageComponent,ReportMissingAnswerComponent],
+  exports:[DashboardComponent, ReportSiteStateComponent, ReportMessagesComponent],
   imports: [
     CommonModule,
     MatPaginatorModule,
