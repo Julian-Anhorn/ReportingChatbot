@@ -14,6 +14,4 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 export class ReportConversationsComponent implements OnInit {
   ngOnInit(): void {
   }
-
-
         }

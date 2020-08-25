@@ -4,6 +4,7 @@ import * as Highcharts from 'highcharts';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { ReportService } from '../../Onlimreport.service';
 import * as moment from 'moment';
+import { Options } from 'highcharts';
 
 @Component({
   selector: 'app-ReportIntentsUsage',
@@ -19,16 +20,17 @@ range = new FormGroup({
   end: new FormControl()
 });
 
-Highcharts: typeof Highcharts = Highcharts;
+chartOptions: {};
+Highcharts = Highcharts;
 jsonData;
 updateFlag = false;
-chartOptions: Highcharts.Options
+
 IsWait=true;
 toppings = new FormControl();
 startDate;
 endDate;
 average=0.0;
-
+nData=[]
 constructor(private reportService: ReportService){
 }
 
@@ -39,86 +41,42 @@ ngOnInit(): void {
   this.reportService.getAll().subscribe(data => {
     const result = data.map(item => Object.values(item));
 
+
     this.jsonData=result.map(element => ({
+
       filteredData: element[0].filter(value =>value["sender"]["type"]!="bot"),
-    }
-      ))
 
-      let month;
+    }
+))
+
+
       this.jsonData.forEach(element => {
-        try{
-       month = moment(element[0][0]['created_at']).format('MMMM')
-        }catch(e){
+        element["filteredData"].forEach(innerElement => {
+          this.nData.push(innerElement["intent_uid"])
 
+        });
+
+
+      })
+
+
+      var counts=[]
+      var finalData = []
+      this.nData.forEach(function(x) {
+
+        if((counts.some(item => item.name == ""+x+"") == false)){
+          var temp ={name:x, y:0}
+          counts.push(temp)
         }
-        switch (month) {
-          case 'Januar':
-            this.dataMap.Jan.push(element)
-            break;
-          case 'März':
-            this.dataMap.Feb.push(element)
-            break;
-          case 'April':
-            this.dataMap.Apr.push(element)
-            break;
-          case 'Mai':
-            this.dataMap.May.push(element)
-            break;
-          case 'Juni':
-            this.dataMap.Jun.push(element)
-            break;
-          case 'Juli':
-            this.dataMap.Jul.push(element)
-            break;
-          case 'August':
-            this.dataMap.Aug.push(element)
-            break;
-          case 'September':
-            this.dataMap.Sep.push(element)
-            break;
-          case 'Oktober':
-            this.dataMap.Oct.push(element)
-            break;
-          case 'November':
-            this.dataMap.Nov.push(element)
-            break;
-          case 'Dezember':
-            this.dataMap.Dec.push(element)
-            break;
-          default:
-
+        if(x != null){
+          counts.find(item => item.name == ""+x+"").y+=1
         }
 
-    }
-    )
-    this.dataMap.Jan =   this.dataMap.Jan.filter(value =>  value.length> 0)
-    this.dataMap.Feb =   this.dataMap.Feb.filter(value =>  value.length> 0)
-    this.dataMap.Mar =   this.dataMap.Mar.filter(value =>  value.length> 0)
-    this.dataMap.Apr =   this.dataMap.Apr.filter(value =>  value.length> 0)
-    this.dataMap.May =   this.dataMap.May.filter(value =>  value.length> 0)
-    this.dataMap.Jun =   this.dataMap.Jun.filter(value =>  value.length> 0)
-    this.dataMap.Jul =   this.dataMap.Jul.filter(value =>  value.length> 0)
-    this.dataMap.Aug =   this.dataMap.Aug.filter(value =>  value.length> 0)
-    this.dataMap.Sep =   this.dataMap.Sep.filter(value =>  value.length> 0)
-    this.dataMap.Oct =   this.dataMap.Oct.filter(value =>  value.length> 0)
-    this.dataMap.Nov =   this.dataMap.Nov.filter(value =>  value.length> 0)
-    this.dataMap.Dec =   this.dataMap.Dec.filter(value =>  value.length> 0)
+      });
+      ;
+      counts.sort((a, b) => (a.y > b.y) ? 1 : -1)
 
-    this.dataMap = [
-    this.dataMap.Jan.length,
-    this.dataMap.Feb.length,
-    this.dataMap.Mar.length,
-    this.dataMap.Apr.length,
-    this.dataMap.May.length,
-    this.dataMap.Jun.length,
-    this.dataMap.Jul.length,
-    this.dataMap.Aug.length,
-    this.dataMap.Sep.length,
-    this.dataMap.Oct.length,
-    this.dataMap.Nov.length,
-    this.dataMap.Dec.length]
-
-    this.updateChart(range,this.dataMap);
+    this.updateChart(range,counts);
   });
 }
 setStartDate(type: string, event: MatDatepickerInputEvent<Date>) {
@@ -138,55 +96,66 @@ updateData(){
 }
 
 updateChart(range,data) {
-
-  console.log(data[0].data)
-  this.chartOptions={
-    rangeSelector: {
-      selected: 1
-  },
-
-    title: {
-      text: "Gesamt:"+ this.jsonData.length+"   "+ "Ø:"+this.average,
-      align: 'center'},
-      exporting: {
-        buttons: {
-          contextButton: {
-            symbolStroke: '#efefef',
-            theme: {
-              fill: 'grey'
-            }
-          }
-        }
-      },
-    xAxis:{
-      labels: {
-        style: {
-            fontSize:'15px'
-        }},
-      categories:range,
-      crosshair: true
-
-   },
-   yAxis: {
-    title: {
-      text: ''
-   }},
-   series: [
-    {
-      name:'Anzahl',
-      type: 'area',
-      data: data,
-      color: "#774251",
-
-    //  data:[data.Jan.length,data.Feb.length,data.Mar.length,data.Apr.length,data.May.length,data.Jun.length,data.Jul.length,data.Aug.length,data.Sep.length,data.Oct.length,data.Nov.length,data.Dec.length]
-  }
-],
-}
-  this.updateFlag = true;
-  this.IsWait=false;
-}
+  data= data.slice(data.length-10, data.length+1);
 
 
+  var pieColors = (function () {
+    var colors = [],
+        base = Highcharts.getOptions().colors[0],
+        i;
+
+    for (i = 0; i < 10; i += 1) {
+        // Start out with a darkened base color (negative brighten), and end
+        // up with a much brighter color
+        colors.push(Highcharts.color(base).brighten((i - 8) / 7).get());
     }
+    return colors;
+}());
 
 
+
+
+  this.chartOptions = {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Top-10 URL´s'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    accessibility: {
+        point: {
+            valueSuffix: '%'
+        }
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            colors: pieColors,
+
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+
+            }
+        }
+    },
+    credits: {
+      enabled:false,
+    },
+    exporting: {
+      enabled:true,
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: (data)
+    }]
+};
+}}

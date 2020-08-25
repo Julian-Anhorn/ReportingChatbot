@@ -8,7 +8,7 @@ import { ReportService } from '../../Onlimreport.service';
 @Component({
   selector: 'app-ReportMonthly',
   templateUrl: './ReportMonthlyConversations.component.html',
-  styleUrls: ['./ReportMonthlyConversations.component.css']
+  styleUrls: ['../ReportConversations.component.css']
 })
 export class ReportMothlyConversationsComponent implements OnInit {
 //dataMap = {"Total":0,"Jan":0,"Feb":0,"Mar":0,"Apr":0,"May":0,"Jun":0,"Jul":0,"Aug":0,"Sep":0,"Oct":0,"Nov":0,"Dec":0}

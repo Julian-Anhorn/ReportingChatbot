@@ -45,7 +45,7 @@ constructor(private reportService: ReportService){
 
         this.dataMap=  this.dataMap.filter(value =>  value.length> 0)
         this.dataMap.forEach(element => {
-          element[0]['created_at'] =  moment(element[0]['created_at'] ).format('DD.MM.YYYY')
+          element[0]['created_at'] =  moment(element[0]['created_at'] ).format('DD.MM.YYYY HH:MM')
           element[0]['id'] =  element[0]['sender']['anonymous_name']
 
         this.finalData.push(element[0])
