@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import * as moment from 'moment';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { FormGroup, FormControl } from '@angular/forms';
 import * as Highcharts from 'highcharts';
 import { ReportService } from '../../Onlimreport.service';
+import value from '*.json';
+import { style } from '@angular/animations';
 
 @Component({
   selector: 'app-ReportHourlyConversations',
   templateUrl: './ReportHourlyConversations.component.html',
-  styleUrls: ['./ReportHourlyConversations.component.scss']
+  styleUrls: ['./ReportHourlyConversations.component.scss'],
+  encapsulation: ViewEncapsulation.None
+
 })
 export class ReportHourlyConversationsComponent implements OnInit {
  //dataMap = {"Total":0,"Jan":0,"Feb":0,"Mar":0,"Apr":0,"May":0,"Jun":0,"Jul":0,"Aug":0,"Sep":0,"Oct":0,"Nov":0,"Dec":0}
@@ -18,6 +22,7 @@ export class ReportHourlyConversationsComponent implements OnInit {
    end: new FormControl()
  });
 
+ checked = false;
  Highcharts: typeof Highcharts = Highcharts;
  jsonData;
  updateFlag = false;
@@ -26,8 +31,14 @@ export class ReportHourlyConversationsComponent implements OnInit {
  toppings = new FormControl();
  startDate;
  endDate;
+dateRange=[];
+yAxis:Highcharts.YAxisOptions
 
  constructor(private reportService: ReportService){
+  this.yAxis ={
+    title: {
+      text: ''
+   }}
  }
 
  ngOnInit(): void {
@@ -82,14 +93,14 @@ export class ReportHourlyConversationsComponent implements OnInit {
      "h23":[],
 
    }
-   let range=["00h", "01h","02h","03h","04h","05h","06h","07h","08h","09h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h","22h","23h"
+   this.dateRange=["00h", "01h","02h","03h","04h","05h","06h","07h","08h","09h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h","22h","23h"
    ]
 
 
     let hour;
     this.jsonData.forEach(element => {
       try{
-        hour = moment(element[0][0]['created_at']).format('H')
+        hour = moment(element[1][0]['created_at']).format('H')
       }catch(e){
 
       }
@@ -210,13 +221,51 @@ export class ReportHourlyConversationsComponent implements OnInit {
    this.dataMap.h23.filter(value => value.length > 0).length
    ]
 
-   this.updateChart(range,this.dataMap)
+   this.updateChart(this.dateRange,this.dataMap)
+   }
 
- }
+   displayAvgLine(){
+     if(this.checked){
+      this.yAxis ={
+        title: {
+          text: ''
+       },
+
+        plotLines: [{
+        color: 'white',
+        label: {
+          text: "14",
+          style:{
+            color:"white",
+            fontSize:'15px',
+            backgroundColor:"red"
+          }
+        },
+        value: 15,
+        width: 3,
+        zIndex: 2,
+      }
+
+
+
+     ]}}else{
+      this.yAxis={plotLines: [{
+      //   yAxis: {
+
+      //     title: {
+      //       text: ''
+      //    }},
+      //    legend: {
+      //      enabled: false
+      //  }
+     }]
+   }}
+   this.updateChart(this.dateRange,this.dataMap)
+  }
+
 
    updateChart(range,data) {
 
-     console.log(data[0].data)
      this.chartOptions={
        rangeSelector: {
          selected: 1
@@ -235,6 +284,13 @@ export class ReportHourlyConversationsComponent implements OnInit {
              }
            }
          },
+         yAxis:
+          this.yAxis,
+          legend: {
+            enabled: false
+        },
+
+
          xAxis:{
           labels: {
             style: {
@@ -244,10 +300,7 @@ export class ReportHourlyConversationsComponent implements OnInit {
           crosshair: true
 
        },
-      yAxis: {
-       title: {
-         text: ''
-      }},
+
       series: [
        {
          name:'Anzahl',
@@ -257,8 +310,11 @@ export class ReportHourlyConversationsComponent implements OnInit {
 
        //  data:[data.Jan.length,data.Feb.length,data.Mar.length,data.Apr.length,data.May.length,data.Jun.length,data.Jul.length,data.Aug.length,data.Sep.length,data.Oct.length,data.Nov.length,data.Dec.length]
      }
-   ],
 
+   ],
+   credits: {
+    enabled: false
+  },
 
 
 }

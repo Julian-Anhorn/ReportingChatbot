@@ -1,4 +1,4 @@
-@import 'src/app/basic-layout/nav/_theme.scss';
+@import 'src/theme.scss';
 
 :host {
   display: flex;
@@ -7,12 +7,12 @@
   width: 100%;
 
   .mat-list-item.active {
-    background-color: mat-color($app-primary, 100);
+    background-color: mat-color($my-custom-primary);
   }
   &:hover,
   &:focus {
     >.mat-list-item:not(.expanded) {
-      background-color: mat-color($app-primary, 100) !important;
+      background-color: mat-color($my-custom-primary) !important;
     }
   }
 }

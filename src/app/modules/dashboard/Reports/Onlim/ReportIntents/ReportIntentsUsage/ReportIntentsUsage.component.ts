@@ -6,6 +6,9 @@ import { ReportService } from '../../Onlimreport.service';
 import * as moment from 'moment';
 import { Options } from 'highcharts';
 import IntentsFile from 'src/app/Data/Intents.json'
+import HC_exporting from 'highcharts/modules/exporting';
+HC_exporting(Highcharts);
+
 @Component({
   selector: 'app-ReportIntentsUsage',
   templateUrl: './ReportIntentsUsage.component.html',
@@ -187,7 +190,13 @@ updateChart(data:any[]) {
         text: 'Top-10 Intents<br>'
     },
     tooltip: {
-        pointFormat: '<b>{point.y}</b>; <b>{point.percentage:.1f}%</b>'
+
+        pointFormat: '<span style="color:{point.color}"><b>{point.y}</b>; <b>{point.percentage:.1f}%</b>',
+
+        style: {
+
+          fontSize:'14px'
+      }
     },
     accessibility: {
         point: {
@@ -202,10 +211,10 @@ updateChart(data:any[]) {
 
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                format: '<b>{point.name}</b>: {point.percentage:.1f}%',
                 style: {
                   backgroundColor: '#FCFFC5',
-                  fontSize:'13px'
+                  fontSize:'15px'
               }
 
             }
@@ -215,8 +224,10 @@ updateChart(data:any[]) {
       enabled:false,
     },
     exporting: {
-      enabled:true,
-    },
+      sourceWidth: 800,
+      sourceHeight: 400,
+      scale: 1
+  },
     series: [{
         name: 'Anteil',
         colorByPoint: true,

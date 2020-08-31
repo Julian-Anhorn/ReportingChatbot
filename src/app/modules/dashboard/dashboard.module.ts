@@ -17,7 +17,7 @@ import { ReportMessagesComponent } from './Reports/Onlim/ReportMessages/ReportMe
 import { ReportConversationsComponent } from './Reports/Onlim/ReportConversations/ReportConversations.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import {MatSelectModule} from '@angular/material/select';
-import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatDatepickerModule, MatDateSelectionModel} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import { ReportDailyConversationsComponent } from './Reports/Onlim/ReportConversations/ReportDailyConversations/ReportDailyConversations.component';
 import { ReportMothlyConversationsComponent } from './Reports/Onlim/ReportConversations/ReportMonthlyConversations/ReportMonthlyConversations.component';
@@ -25,6 +25,7 @@ import { ReportHourlyConversationsComponent } from './Reports/Onlim/ReportConver
 import { ReportIntentsComponent } from './Reports/Onlim/ReportIntents/ReportIntents.component';
 import { ReportIntentsUsageComponent } from './Reports/Onlim/ReportIntents/ReportIntentsUsage/ReportIntentsUsage.component';
 import { ReportMissingAnswerComponent } from './Reports/Onlim/ReportIntents/ReportMissingAnswer/ReportMissingAnswer.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 
@@ -45,7 +46,7 @@ import { ReportMissingAnswerComponent } from './Reports/Onlim/ReportIntents/Repo
     MatTableModule,
     RouterModule,
     MatDatepickerModule,
-
+    MatCheckboxModule,
     MatProgressSpinnerModule,
     MatTableExporterModule,
     HighchartsChartModule,

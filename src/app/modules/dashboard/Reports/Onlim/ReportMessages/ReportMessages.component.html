@@ -5,8 +5,8 @@
 
 
 
-
-  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
 
 
   <ng-container *ngIf="chartOptions">
@@ -14,5 +14,6 @@
   <highcharts-chart
     [Highcharts]="Highcharts"
     [options]="chartOptions"
-    style="width: 80%; height: 500px; display: block;"
+    style="width: 100%; height: 500px; display: block;"
   ></highcharts-chart>
+

@@ -1,5 +1,6 @@
 <mat-progress-spinner style="margin:0 auto;" mode="indeterminate" *ngIf="IsWait">
 </mat-progress-spinner>
+<section class="example-section">
 
 <mat-form-field appearance="fill">
   <mat-label>Enter a date range</mat-label>
@@ -14,9 +15,11 @@
 
 
 </mat-form-field>
+<mat-checkbox #checkbox (change)='displayAvgLine()'  [(ngModel)]="checked" value=''>Durchschnitt anzeigen</mat-checkbox>
 
-
+</section>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
 
 
 <ng-container *ngIf="chartOptions">
@@ -26,3 +29,4 @@
   [options]="chartOptions"
   style="width: 80%; height: 500px; display: block;"
 ></highcharts-chart>
+<br>

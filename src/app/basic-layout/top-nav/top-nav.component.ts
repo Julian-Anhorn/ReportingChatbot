@@ -24,7 +24,11 @@ export class TopNavComponent implements OnInit {
               map(result => result.matches),
               shareReplay()
             );
+
+
+
   ngOnInit() {
+
   }
 
 }

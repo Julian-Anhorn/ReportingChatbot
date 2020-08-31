@@ -64,7 +64,7 @@ export class ReportDailyConversationsComponent implements OnInit {
     let day;
     this.jsonData.forEach(element => {
       try{
-        day = moment(element[0][0]['created_at']).format('dddd')
+        day = moment(element[1][0]['created_at']).format('dddd')
       }catch(e){
 
       }
@@ -111,7 +111,6 @@ export class ReportDailyConversationsComponent implements OnInit {
 
    updateChart(range,data) {
 
-     console.log(data[0].data)
      this.chartOptions={
        rangeSelector: {
          selected: 1
@@ -157,6 +156,12 @@ export class ReportDailyConversationsComponent implements OnInit {
        //  data:[data.Jan.length,data.Feb.length,data.Mar.length,data.Apr.length,data.May.length,data.Jun.length,data.Jul.length,data.Aug.length,data.Sep.length,data.Oct.length,data.Nov.length,data.Dec.length]
      }
    ],
+   credits: {
+    enabled: false
+  },
+  legend: {
+    enabled: false
+  },
 
 
 
