@@ -39,7 +39,7 @@ export class ReportMessagesComponent implements OnInit {
       const result = data.map(item => Object.values(item));
 
       this.newData = result.map(element => ({
-        filteredData: element[0].filter(value => value['sender']['type'] !='bot'),
+        filteredData: element[1].filter(value => value['sender']['type'] !='bot'),
       }
         ));
       this.newData.forEach(element => {

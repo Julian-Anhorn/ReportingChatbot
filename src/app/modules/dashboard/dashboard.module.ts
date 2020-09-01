@@ -26,6 +26,7 @@ import { ReportIntentsComponent } from './Reports/Onlim/ReportIntents/ReportInte
 import { ReportIntentsUsageComponent } from './Reports/Onlim/ReportIntents/ReportIntentsUsage/ReportIntentsUsage.component';
 import { ReportMissingAnswerComponent } from './Reports/Onlim/ReportIntents/ReportMissingAnswer/ReportMissingAnswer.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 
@@ -42,6 +43,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatInputModule,
     MatFormFieldModule,
     MatSortModule,
+    MatGridListModule,
     MatToolbarModule,
     MatTableModule,
     RouterModule,

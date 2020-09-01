@@ -12,12 +12,7 @@ theme(Highcharts);
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-
 }
-
-
-
-
 /**
  * @title Basic use of `<table mat-table>`
  */

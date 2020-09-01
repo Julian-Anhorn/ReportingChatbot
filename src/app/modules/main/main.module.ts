@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { DndDirective } from './fileUpload/dnd.directive';
 import { ProgressComponent } from './fileUpload/progress/progress.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -19,7 +20,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     MatButtonModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
-
+    MatGridListModule,
     RouterModule
   ]
 })

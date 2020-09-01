@@ -169,6 +169,7 @@ displayAvgLine(){
 
      plotLines: [{
      color: 'white',
+     dashStyle: "Dash",
      label: {
        text: this.average,
        style:{
@@ -178,7 +179,7 @@ displayAvgLine(){
        }
      },
      value: this.average,
-     width: 3,
+     width: 2,
      zIndex: 2,
    }
 
@@ -223,7 +224,7 @@ console.log(data)
     fallbackToExportServer: false
 },
     title: {
-      text: "Gesamt:"+ this.total+"   \nØ:"+this.average+"/Monat",
+      text: "Konversationen monatlich<br>Gesamt:"+ this.total+"   \nØ:"+this.average+"/Monat",
       align: 'center'},
 
     xAxis:{
