@@ -47,7 +47,7 @@ ngOnInit(): void {
 
     this.jsonData=result.map(element => ({
 
-      filteredData: element[0].filter(value =>value["sender"]["type"]!="bot"),
+      filteredData: element[1].filter(value =>value["sender"]["type"]!="bot"),
 
     }
 ))

@@ -25,18 +25,34 @@ chartOptions: Highcharts.Options
 
 
 IsWait=true;
-toppings = new FormControl();
-startDate;
+startDate
 endDate;
 monthRange=[];
 average;
 total=0;
-constructor(private reportService: ReportService){
+minDate = new Date(2020, 4, 28);
+maxDate = new Date(Date.now());
+defaultStartDate = new Date(2020, 4, 28);
+yAxis:Highcharts.YAxisOptions
+checked;
+categories =[];
+finalDataMap=[];
+
+ constructor(private reportService: ReportService){
+  this.yAxis ={
+    title: {
+      text: ''
+   }}
+
+  this.startDate= new Date(2020, 4, 28);
+  this.endDate = new Date(Date.now());
+
 }
+
 
 ngOnInit(): void {
   this.dataMap = []
-  let categories=[]
+
 
   this.reportService.getAll().subscribe(data => {
     const result = data.map(item => Object.values(item));
@@ -52,22 +68,20 @@ ngOnInit(): void {
       this.jsonData.forEach(element => {
         try{
        month = moment(element[1][0]['created_at']).format('MMM/YY')
-
        if(this.dataMap.find(item => item.Monat==month)==undefined){
         this.dataMap.push({"Monat":month,"Anzahl":0})
        }
         }catch(e){
         }
-
         this.dataMap.find(item => item.Monat==month).Anzahl++;
       }
     )
     this.dataMap.forEach(element => {
-      categories.push(element.Monat)
+      this.categories.push(element.Monat)
       this.total+=element.Anzahl
     });
     //Monat sortieren
-    const finaleCat = categories.sort((a, b) => {
+    let finaleCat = this.categories.sort((a, b) => {
       return moment(moment(b.Monat).format("M/YY")).diff(moment(a.Monat).format("M/YY"));
     });
 
@@ -78,20 +92,22 @@ ngOnInit(): void {
     finaleCat.forEach(element => {
       finalData.push(this.dataMap.find(item => item.Monat===element).Anzahl)
     });
-
-
-    this.setAverage()
+    this.categories=[]
+    this.finalDataMap=[]
+    this.categories =finaleCat;
+    this.finalDataMap= finalData;
+    this.setAverage(finaleCat)
     this.updateChart(finaleCat,finalData);
 
   });
 }
 setStartDate(type: string, event: MatDatepickerInputEvent<Date>) {
-  this.startDate=moment(new Date(`${type}: ${event.value}`));
 
+  this.startDate=moment(new Date(`${type}: ${event.value}`));
+  this.endDate= new Date(Date.now());
 }
 setEndDate(type: string, event: MatDatepickerInputEvent<Date>) {
   this.endDate=moment(new Date(`${type}: ${event.value}`));
-  console.log(this.startDate+"-"+this.endDate)
   this.setDataRange()
 }
 setDataRange(){
@@ -101,19 +117,17 @@ setDataRange(){
        this.startDate.add(1,'month');
     }
 this.monthRange=timeValues;
-console.log(this.monthRange)
 this.updateData();
 }
 
-setAverage(){
-  let start = moment(this.startDate, "YYYY-MM-DD");
-  let end = moment(this.endDate, "YYYY-MM-DD");
-  //Difference in number of days
-  let duration=moment.duration(start.diff(end)).asMonths();
-  this.average= (this.total / duration *-1).toFixed(0);
+setAverage(range){
+  this.average= (this.total / range.length).toFixed(0);
+
 }
 
 updateData(){
+  this.categories=[]
+  this.finalDataMap=[]
   let newDataMap=[];
   this.total=0;
   this.monthRange.forEach(element => {
@@ -123,27 +137,72 @@ if(elm!=undefined){
 }
 
 });
-  let categories=[];
   newDataMap.forEach(element => {
     if(element[0]===undefined){}else{
-      categories.push(element[0].Monat)
-      this.total+=element.Anzahl}
+      this.categories.push(element[0].Monat)
+      this.total+=element[0].Anzahl}
     });
   //Monat sortieren
-  const finaleCat = categories.sort((a, b) => {
+  const finaleCat = this.categories.sort((a, b) => {
     return moment(moment(b.Monat).format("M/YY")).diff(moment(a.Monat).format("M/YY"));
   });
 
 
   let finalData =[]
   finaleCat.forEach(element => {
-    finalData.push(newDataMap.find(item => item[0].Monat===element)[0].Anzahl)
+    finalData.push(this.dataMap.find(item => item.Monat===element).Anzahl)
   });
 
-console.log(finalData)
-  this.setAverage()
+  this.categories =finaleCat;
+  this.finalDataMap =finalData;
+
+  this.setAverage(finaleCat)
   this.updateChart(finaleCat,finalData);
 }
+
+displayAvgLine(){
+  if(this.checked){
+   this.yAxis ={
+     title: {
+       text: ''
+    },
+
+     plotLines: [{
+     color: 'white',
+     label: {
+       text: this.average,
+       style:{
+         color:"white",
+         fontSize:'15px',
+         backgroundColor:"red"
+       }
+     },
+     value: this.average,
+     width: 3,
+     zIndex: 2,
+   }
+
+
+
+  ]}}else{
+   this.yAxis={plotLines: [{
+   //   yAxis: {
+
+   //     title: {
+   //       text: ''
+   //    }},
+   //    legend: {
+   //      enabled: false
+   //  }
+  }]
+}}
+this.updateChart(this.categories,this.finalDataMap)
+}
+
+
+
+
+
 
 updateChart(range,data) {
 console.log(data)
@@ -178,10 +237,7 @@ console.log(data)
         crosshair: true
 
    },
-   yAxis: {
-    title: {
-      text: ''
-   }},
+   yAxis: this.yAxis,
    series: [
     {
       name:'Anzahl',
@@ -200,6 +256,9 @@ credits: {
   enabled: false
 },
 
+legend: {
+  enabled: false
+},
 
 
 }

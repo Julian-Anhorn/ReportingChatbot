@@ -38,7 +38,7 @@ constructor(private reportService: ReportService){
 
       this.jsonData=result.map(element => (
 
-        this.dataMap.push(element[0].filter(value =>value["unanswered"]==true))
+        this.dataMap.push(element[1].filter(value =>value["unanswered"]==true))
 
         )
         )
