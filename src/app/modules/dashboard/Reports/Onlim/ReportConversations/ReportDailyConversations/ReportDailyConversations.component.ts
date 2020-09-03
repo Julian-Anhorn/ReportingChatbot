@@ -4,6 +4,7 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { FormGroup, FormControl } from '@angular/forms';
 import * as Highcharts from 'highcharts';
 import { ReportService } from '../../Onlimreport.service';
+import { DateAdapter } from '@angular/material/core';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { ReportService } from '../../Onlimreport.service';
 export class ReportDailyConversationsComponent implements OnInit {
 
   //dataMap = {"Total":0,"Jan":0,"Feb":0,"Mar":0,"Apr":0,"May":0,"Jun":0,"Jul":0,"Aug":0,"Sep":0,"Oct":0,"Nov":0,"Dec":0}
- dataMap ;
+ dataMap=[] ;
  range = new FormGroup({
    start: new FormControl(),
    end: new FormControl()
@@ -24,151 +25,249 @@ export class ReportDailyConversationsComponent implements OnInit {
  jsonData;
  updateFlag = false;
  chartOptions: Highcharts.Options
+
+
  IsWait=true;
- toppings = new FormControl();
  startDate;
  endDate;
+ monthRange=[];
+ average;
+ total=0;
+ minDate = new Date(2020, 4, 28);
+ maxDate = new Date(Date.now());
+ defaultStartDate = new Date(2020, 4, 28);
+ yAxis:Highcharts.YAxisOptions
+ checked;
+ categories =[];
+ finalDataMap=[];
 
- constructor(private reportService: ReportService){
- }
 
+ constructor(private reportService: ReportService, private dateAdapter: DateAdapter<any>)
+ {
+  this.yAxis ={
+    title: {
+      text: ''
+   }}
+
+  this.startDate= new Date(2020, 4, 28);
+  this.endDate = new Date(Date.now());
+  this.dateAdapter.setLocale('de');
+
+  }
  ngOnInit(): void {
 
-   this.reportService.getAll().subscribe(data => {
-     const result = data.map(item => Object.values(item));
+  this.reportService.getAll().subscribe(data => {
+    const result = data.map(item => Object.values(item));
 
-     this.jsonData=result
-      this.getWeekData();
-
-   });
- }
- setStartDate(type: string, event: MatDatepickerInputEvent<Date>) {
-   this.startDate=new Date(`${type}: ${event.value}`);
- }
- setEndDate(type: string, event: MatDatepickerInputEvent<Date>) {
-   this.endDate=new Date(`${type}: ${event.value}`);
-   console.log(this.startDate+"-"+this.endDate)
-   this.updateData()
- }
- updateData(){
-   this.getWeekData();
- }
-
- getWeekData(){
-  this.dataMap = {"Montag":[],"Dienstag":[],"Mittwoch":[],"Donnerstag":[],"Freitag":[],"Samstag":[],"Sonntag":[]}
-  let range=["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
-
-
-
-
+    this.jsonData=result
     let day;
+
     this.jsonData.forEach(element => {
-      try{
-        day = moment(element[1][0]['created_at']).format('dddd')
-      }catch(e){
-
+        try{
+       day = moment(element[1][0]['created_at']).format('dddd')
+       if(this.dataMap.find(item => item.Day==day)==undefined){
+        this.dataMap.push({"Day":day,"Count":0})
+       }
+        }catch(e){
+        }
+        this.dataMap.find(item => item.Day==day).Count++;
       }
-      switch (day) {
-        case 'Montag':
-          this.dataMap.Montag.push(element)
-          break;
-        case 'Dienstag':
-          this.dataMap.Dienstag.push(element)
-          break;
-        case 'Mittwoch':
-          this.dataMap.Mittwoch.push(element)
-          break;
-        case 'Donnerstag':
-          this.dataMap.Donnerstag.push(element)
-          break;
-        case 'Freitag':
-          this.dataMap.Freitag.push(element)
-          break;
-        case 'Samstag':
-          this.dataMap.Samstag.push(element)
-          break;
-        case 'Sonntag':
-          this.dataMap.Sonntag.push(element)
-          break;
-        default:
+    )
+    this.dataMap.forEach(element => {
+      this.categories.push(element.Day)
+      this.total+=element.Count
+    });
+    console.log( this.dataMap)
+    this.categories=["Montag","Dienstag","Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
+
+
+    let finalData =[]
+    this.categories.forEach(element => {
+      finalData.push(this.dataMap.find(item => item.Day===element).Count)
+    });
+
+    this.finalDataMap=[]
+    this.finalDataMap= finalData;
+    this.setAverage()
+    this.updateChart(this.categories,finalData);
+
+  });
+}
+setStartDate(type: string, event: MatDatepickerInputEvent<Date>) {
+
+  this.startDate=moment(new Date(`${type}: ${event.value}`));
+  this.endDate= new Date(Date.now());
+}
+setEndDate(type: string, event: MatDatepickerInputEvent<Date>) {
+  this.endDate=moment(new Date(`${type}: ${event.value}`));
+  console.log(this.endDate)
+  this.updateData()
+}
+updateData(){
+  this.total=0;
+  let day;
+  this.dataMap=[]
+  this.jsonData.forEach(element => {
+    try{
+
+   let timestamp=new Date(element[1][0]['created_at']);
+   //+1 Tag sonst wird 00:00Uhr von EndDay ausgewählt und der Tag nicht mitgezählt
+   this.endDate = new Date( this.endDate + ( 3600 * 1000 * 24))
+
+
+   if((timestamp >= this.startDate) && (timestamp <= this.endDate)){
+      day = moment(element[1][0]['created_at']).format('dddd')
+      if(this.dataMap.find(item => item.Day==day)==undefined){
+        this.dataMap.push({"Day":day,"Count":0})
       }
-  })
 
-  this.dataMap=[
-  this.dataMap.Montag.filter(value => value.length > 0).length,
-  this.dataMap.Dienstag = this.dataMap.Dienstag.filter(value => value.length > 0).length,
-  this.dataMap.Mittwoch = this.dataMap.Mittwoch.filter(value => value.length > 0).length,
-  this.dataMap.Donnerstag = this.dataMap.Donnerstag.filter(value => value.length > 0).length,
-  this.dataMap.Freitag = this.dataMap.Freitag.filter(value => value.length > 0).length,
-  this.dataMap.Samstag = this.dataMap.Samstag.filter(value => value.length > 0).length,
-  this.dataMap.Sonntag = this.dataMap.Sonntag.filter(value => value.length > 0).length
-  ]
+      this.dataMap.find(item => item.Day==day).Count++;
 
-  this.updateChart(range,this.dataMap)
+  } }catch(e){
+  }
+}
+);
+  this.dataMap.forEach(element => {
+  this.total+=element.Count
+});
+  this.categories=["Montag","Dienstag","Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
 
+  console.log(this.dataMap);
+  let finalData =[]
+  this.categories.forEach(element => {
+  let elm = this.dataMap.find(item => item.Day===element)
+  if(elm!=undefined){
+    finalData.push(elm.Count)
+
+  }
+});
+  let finalCat=[]
+  this.categories.forEach(element => {
+    if(this.dataMap.find(item => item.Day===element)!=undefined){
+      finalCat.push(element)
+
+    }
+});
+console.log(finalCat)
+  this.categories = finalCat;
+  this.finalDataMap= finalData;
+  this.setAverage()
+  this.updateChart(this.categories,finalData);
 }
 
 
-   updateChart(range,data) {
+setAverage(){
+  var diffDays = moment(this.endDate).diff(moment(this.startDate), 'days');
+  this.average= (this.total / diffDays).toFixed(0);
 
-     this.chartOptions={
-       rangeSelector: {
-         selected: 1
+}
+
+displayAvgLine(){
+  if(this.checked){
+   this.yAxis ={
+     title: {
+       text: ''
+    },
+
+     plotLines: [{
+     color: 'white',
+     dashStyle: "Dash",
+     label: {
+       text: this.average,
+       style:{
+         color:"white",
+         fontSize:'15px',
+         backgroundColor:"red"
+       }
      },
-
-       title: {
-         text: "Gesamt:"+ this.jsonData.length,
-         align: 'center'},
-         exporting: {
-           buttons: {
-             contextButton: {
-               symbolStroke: '#efefef',
-               theme: {
-                 fill: 'grey'
-               }
-             }
-           }
-         },
-         xAxis:{
-          offset:0,
+     value: this.average,
+     width: 2,
+     zIndex: 2,
+   }
 
 
-          labels: {
 
-            style: {
-                fontSize:'15px'
-            }},
-          categories:range,
+  ]}}else{
+   this.yAxis={plotLines: [{
+   //   yAxis: {
+
+   //     title: {
+   //       text: ''
+   //    }},
+   //    legend: {
+   //      enabled: false
+   //  }
+  }]
+}}
+  this.updateChart(this.categories,this.finalDataMap)
+}
+
+
+updateChart(range,data) {
+  console.log(data)
+  this.chartOptions={
+      rangeSelector: {
+        selected: 1
+    },
+    exporting: {
+      sourceWidth: 1000,
+      sourceHeight: 600,
+      scale: 1,
+      chartOptions: { // specific options for the exported image
+          plotOptions: {
+              series: {
+                  dataLabels: {
+                      enabled: true
+                  }
+              }
+          }
+      },
+      fallbackToExportServer: false
+  },
+      title: {
+        text: "Konversationen wöchentlich<br>Gesamt:"+ this.total+"   \nØ"+this.average,
+        align: 'center'},
+
+      xAxis:{
+        type: "category",
+
+        labels: {
+          style: {
+              fontSize:'15px'
+          }},
+          categories:range, // categories
           crosshair: true
 
-       },
-      yAxis: {
-       title: {
-         text: ''
-      }},
-      series: [
-       {
-         name:'Anzahl',
-         type: 'area',
-         data: data,
-         color: "#774251",
+     },
+     yAxis: this.yAxis,
+     series: [
+      {
+        name:'Anzahl',
+        type: 'area',
 
-       //  data:[data.Jan.length,data.Feb.length,data.Mar.length,data.Apr.length,data.May.length,data.Jun.length,data.Jul.length,data.Aug.length,data.Sep.length,data.Oct.length,data.Nov.length,data.Dec.length]
-     }
-   ],
-   credits: {
+        data: data,
+
+
+        color: "#774251",
+
+      //  data:[data.Jan.length,data.Feb.length,data.Mar.length,data.Apr.length,data.May.length,data.Jun.length,data.Jul.length,data.Aug.length,data.Sep.length,data.Oct.length,data.Nov.length,data.Dec.length]
+    }
+  ],
+
+  credits: {
     enabled: false
   },
+
   legend: {
     enabled: false
   },
 
 
+  }
+  this.updateFlag = true;
+  this.IsWait=false;
+  }
 
-}
-     this.updateFlag = true;
-     this.IsWait=false;
-   }
 
+      }
 
-       }

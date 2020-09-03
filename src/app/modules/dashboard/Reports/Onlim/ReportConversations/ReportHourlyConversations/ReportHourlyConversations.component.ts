@@ -6,6 +6,7 @@ import * as Highcharts from 'highcharts';
 import { ReportService } from '../../Onlimreport.service';
 import value from '*.json';
 import { style } from '@angular/animations';
+import { DateAdapter } from '@angular/material/core';
 
 @Component({
   selector: 'app-ReportHourlyConversations',
@@ -15,312 +16,271 @@ import { style } from '@angular/animations';
 
 })
 export class ReportHourlyConversationsComponent implements OnInit {
- //dataMap = {"Total":0,"Jan":0,"Feb":0,"Mar":0,"Apr":0,"May":0,"Jun":0,"Jul":0,"Aug":0,"Sep":0,"Oct":0,"Nov":0,"Dec":0}
- dataMap ;
- range = new FormGroup({
-   start: new FormControl(),
-   end: new FormControl()
- });
 
- checked = false;
- Highcharts: typeof Highcharts = Highcharts;
- jsonData;
- updateFlag = false;
- chartOptions: Highcharts.Options
- IsWait=true;
- toppings = new FormControl();
- startDate;
- endDate;
-dateRange=[];
-yAxis:Highcharts.YAxisOptions
+  //dataMap = {"Total":0,"Jan":0,"Feb":0,"Mar":0,"Apr":0,"May":0,"Jun":0,"Jul":0,"Aug":0,"Sep":0,"Oct":0,"Nov":0,"Dec":0}
+  dataMap=[] ;
+  range = new FormGroup({
+    start: new FormControl(),
+    end: new FormControl()
+  });
 
- constructor(private reportService: ReportService){
-  this.yAxis ={
-    title: {
-      text: ''
-   }}
- }
+  Highcharts: typeof Highcharts = Highcharts;
+  jsonData;
+  updateFlag = false;
+  chartOptions: Highcharts.Options
 
- ngOnInit(): void {
 
+  IsWait=true;
+  startDate;
+  endDate;
+  monthRange=[];
+  average;
+  total=0;
+  minDate = new Date(2020, 4, 28);
+  maxDate = new Date(Date.now());
+  defaultStartDate = new Date(2020, 4, 28);
+  yAxis:Highcharts.YAxisOptions
+  checked;
+  categories =[];
+  finalDataMap=[];
+
+
+  constructor(private reportService: ReportService, private dateAdapter: DateAdapter<any>)
+  {
+   this.yAxis ={
+     title: {
+       text: ''
+    }}
+
+   this.startDate= new Date(2020, 4, 28);
+   this.endDate = new Date(Date.now());
+   this.dateAdapter.setLocale('de');
+
+   }
+  ngOnInit(): void {
 
    this.reportService.getAll().subscribe(data => {
      const result = data.map(item => Object.values(item));
 
-      this.jsonData=result;
-      this.getDailyData();
+     this.jsonData=result
+     let hour;
+
+     this.jsonData.forEach(element => {
+         try{
+        hour = moment(element[1][0]['created_at']).format('HH')
+        hour=hour+"h"
+
+        if(this.dataMap.find(item => item.Hour==hour)==undefined){
+         this.dataMap.push({"Hour":hour,"Count":0})
+        }
+         }catch(e){
+         }
+         this.dataMap.find(item => item.Hour==hour).Count++;
+       }
+     )
+     this.dataMap.forEach(element => {
+       this.categories.push(element.Hour)
+       this.total+=element.Count
+     });
+     console.log( this.dataMap)
+     this.categories=["00h", "01h","02h","03h","04h","05h","06h","07h","08h","09h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h","22h","23h"]
+
+
+     let finalData =[]
+     this.categories.forEach(element => {
+       finalData.push(this.dataMap.find(item => item.Hour===element).Count)
+     });
+
+     this.finalDataMap=[]
+     this.finalDataMap= finalData;
+     this.setAverage()
+     this.updateChart(this.categories,finalData);
 
    });
  }
  setStartDate(type: string, event: MatDatepickerInputEvent<Date>) {
-   this.startDate=new Date(`${type}: ${event.value}`);
+
+   this.startDate=moment(new Date(`${type}: ${event.value}`));
+   this.endDate= new Date(Date.now());
  }
  setEndDate(type: string, event: MatDatepickerInputEvent<Date>) {
-   this.endDate=new Date(`${type}: ${event.value}`);
-   console.log(this.startDate+"-"+this.endDate)
+   this.endDate=moment(new Date(`${type}: ${event.value}`));
+   console.log(this.endDate)
    this.updateData()
  }
  updateData(){
-   this.getDailyData();
+   this.total=0;
+   let day;
+   let hour;
+   this.dataMap=[]
+   this.jsonData.forEach(element => {
+     try{
+
+    let timestamp=new Date(element[1][0]['created_at']);
+    //+1 Tag sonst wird 00:00Uhr von EndDay ausgewählt und der Tag nicht mitgezählt
+    this.endDate = new Date( this.endDate + ( 3600 * 1000 * 24))
+
+
+    if((timestamp >= this.startDate) && (timestamp <= this.endDate)){
+       day = moment(element[1][0]['created_at']).format('dddd')
+       hour = moment(element[1][0]['created_at']).format('HH')
+       hour=hour+"h"
+       if(this.dataMap.find(item => item.Hour==hour)==undefined){
+         this.dataMap.push({"Hour":hour,"Count":0})
+       }
+
+       this.dataMap.find(item => item.Hour==hour).Count++;
+
+   } }catch(e){
+   }
+ }
+ );
+   this.dataMap.forEach(element => {
+   this.total+=element.Count
+ });
+ this.categories=["00h", "01h","02h","03h","04h","05h","06h","07h","08h","09h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h","22h","23h"]
+
+   console.log(this.dataMap);
+   let finalData =[]
+   this.categories.forEach(element => {
+   let elm = this.dataMap.find(item => item.Hour===element)
+   if(elm!=undefined){
+     finalData.push(elm.Count)
+   }
+   {
+    finalData.push(0)
+   }
+ });
+//    let finalCat=[]
+//    console.log(this.dataMap)
+//    this.categories.forEach(element => {
+//      if(this.dataMap.find(item => item.Hour===element)!=undefined){
+//        finalCat.push(element)
+//      }
+//      else{
+//       finalCat.push(element)
+//      }
+//  });
+
+  //  this.categories = finalCat;
+   this.finalDataMap= finalData;
+   this.setAverage()
+   this.updateChart(this.categories,finalData);
  }
 
 
- getDailyData(){
-   this.dataMap = {
-     "h00":[],
-     "h01":[],
-     "h02":[],
-     "h03":[],
-     "h04":[],
-     "h05":[],
-     "h06":[],
-     "h07":[],
-     "h08":[],
-     "h09":[],
-     "h10":[],
-     "h11":[],
-     "h12":[],
-     "h13":[],
-     "h14":[],
-     "h15":[],
-     "h16":[],
-     "h17":[],
-     "h18":[],
-     "h19":[],
-     "h20":[],
-     "h21":[],
-     "h22":[],
-     "h23":[],
+ setAverage(){
+   var diffDays = moment(this.endDate).diff(moment(this.startDate), 'days');
+   this.average= (this.total / diffDays).toFixed(0);
 
-   }
-   this.dateRange=["00h", "01h","02h","03h","04h","05h","06h","07h","08h","09h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h","22h","23h"
-   ]
+ }
 
+ displayAvgLine(){
+   if(this.checked){
+    this.yAxis ={
+      title: {
+        text: ''
+     },
 
-    let hour;
-    this.jsonData.forEach(element => {
-      try{
-        hour = moment(element[1][0]['created_at']).format('H')
-      }catch(e){
-
-      }
-
-    switch (hour) {
-      case '0':
-        this.dataMap.h00.push(element);
-        break;
-      case '1':
-        this.dataMap.h01.push(element);
-        break;
-      case '2':
-        this.dataMap.h02.push(element);
-        break;
-      case '3':
-        this.dataMap.h03.push(element);
-        break;
-      case '4':
-        this.dataMap.h04.push(element);
-        break;
-      case '5':
-        this.dataMap.h05.push(element);
-        break;
-      case '6':
-        this.dataMap.h06.push(element);
-        break;
-      case '7':
-        this.dataMap.h07.push(element);
-        break;
-      case '8':
-        this.dataMap.h08.push(element);
-        break;
-      case '9':
-        this.dataMap.h09.push(element);
-        break;
-      case '10':
-        this.dataMap.h10.push(element);
-        break;
-      case '11':
-        this.dataMap.h11.push(element);
-        break;
-      case '12':
-        this.dataMap.h12.push(element);
-        break;
-
-      case '13':
-        this.dataMap.h13.push(element);
-        break;
-
-      case '14':
-        this.dataMap.h14.push(element);
-        break;
-
-      case '15':
-        this.dataMap.h15.push(element);
-        break;
-
-      case '16':
-        this.dataMap.h16.push(element);
-        break;
-
-      case '17':
-        this.dataMap.h17.push(element);
-        break;
-
-      case '18':
-        this.dataMap.h18.push(element);
-        break;
-
-      case '19':
-        this.dataMap.h19.push(element);
-        break;
-
-      case '20':
-        this.dataMap.h20.push(element);
-        break;
-
-      case '21':
-        this.dataMap.h21.push(element);
-        break;
-
-      case '22':
-        this.dataMap.h22.push(element);
-        break;
-
-      case '23':
-        this.dataMap.h23.push(element);
-
-        break;
-      default:
+      plotLines: [{
+      color: 'white',
+      dashStyle: "Dash",
+      label: {
+        text: this.average,
+        style:{
+          color:"white",
+          fontSize:'15px',
+          backgroundColor:"red"
+        }
+      },
+      value: this.average,
+      width: 2,
+      zIndex: 2,
     }
-   })
-
-   this.dataMap=[
-   this.dataMap.h00.filter(value => value.length > 0).length,
-   this.dataMap.h01.filter(value => value.length > 0).length,
-   this.dataMap.h02.filter(value => value.length > 0).length,
-   this.dataMap.h03.filter(value => value.length > 0).length,
-   this.dataMap.h04.filter(value => value.length > 0).length,
-   this.dataMap.h05.filter(value => value.length > 0).length,
-   this.dataMap.h06.filter(value => value.length > 0).length,
-   this.dataMap.h07.filter(value => value.length > 0).length,
-   this.dataMap.h08.filter(value => value.length > 0).length,
-   this.dataMap.h09.filter(value => value.length > 0).length,
-   this.dataMap.h10.filter(value => value.length > 0).length,
-   this.dataMap.h11.filter(value => value.length > 0).length,
-   this.dataMap.h12.filter(value => value.length > 0).length,
-   this.dataMap.h13.filter(value => value.length > 0).length,
-   this.dataMap.h14.filter(value => value.length > 0).length,
-   this.dataMap.h15.filter(value => value.length > 0).length,
-   this.dataMap.h16.filter(value => value.length > 0).length,
-   this.dataMap.h17.filter(value => value.length > 0).length,
-   this.dataMap.h18.filter(value => value.length > 0).length,
-   this.dataMap.h19.filter(value => value.length > 0).length,
-   this.dataMap.h20.filter(value => value.length > 0).length,
-   this.dataMap.h21.filter(value => value.length > 0).length,
-   this.dataMap.h22.filter(value => value.length > 0).length,
-   this.dataMap.h23.filter(value => value.length > 0).length
-   ]
-
-   this.updateChart(this.dateRange,this.dataMap)
-   }
-
-   displayAvgLine(){
-     if(this.checked){
-      this.yAxis ={
-        title: {
-          text: ''
-       },
-
-        plotLines: [{
-        color: 'white',
-        label: {
-          text: "14",
-          style:{
-            color:"white",
-            fontSize:'15px',
-            backgroundColor:"red"
-          }
-        },
-        value: 15,
-        width: 3,
-        zIndex: 2,
-      }
 
 
 
-     ]}}else{
-      this.yAxis={plotLines: [{
-      //   yAxis: {
+   ]}}else{
+    this.yAxis={plotLines: [{
+    //   yAxis: {
 
-      //     title: {
-      //       text: ''
-      //    }},
-      //    legend: {
-      //      enabled: false
-      //  }
-     }]
-   }}
-   this.updateChart(this.dateRange,this.dataMap)
-  }
+    //     title: {
+    //       text: ''
+    //    }},
+    //    legend: {
+    //      enabled: false
+    //  }
+   }]
+ }}
+   this.updateChart(this.categories,this.finalDataMap)
+ }
 
 
-   updateChart(range,data) {
-
-     this.chartOptions={
+ updateChart(range,data) {
+   console.log(data)
+   this.chartOptions={
        rangeSelector: {
          selected: 1
      },
-
+     exporting: {
+      sourceWidth: 1000,
+      sourceHeight: 600,
+      scale: 1,
+      chartOptions: { // specific options for the exported image
+          plotOptions: {
+              series: {
+                  dataLabels: {
+                      enabled: true
+                  }
+              }
+          }
+      },
+      fallbackToExportServer: false
+  },
        title: {
-         text: "Gesamt:"+ this.jsonData.length,
+         text: "Konversationen wöchentlich<br>Gesamt:"+ this.total+"   \nØ"+this.average,
          align: 'center'},
-         exporting: {
-           buttons: {
-             contextButton: {
-               symbolStroke: '#efefef',
-               theme: {
-                 fill: 'grey'
-               }
-             }
-           }
-         },
-         yAxis:
-          this.yAxis,
-          legend: {
-            enabled: false
-        },
 
+       xAxis:{
+         type: "category",
 
-         xAxis:{
-          labels: {
-            style: {
-                fontSize:'15px'
-            }},
-          categories:range,
-          crosshair: true
+         labels: {
+           style: {
+               fontSize:'15px'
+           }},
+           categories:range, // categories
+           crosshair: true
 
-       },
-
+      },
+      yAxis: this.yAxis,
       series: [
        {
          name:'Anzahl',
          type: 'area',
+
          data: data,
+
+
          color: "#774251",
 
        //  data:[data.Jan.length,data.Feb.length,data.Mar.length,data.Apr.length,data.May.length,data.Jun.length,data.Jul.length,data.Aug.length,data.Sep.length,data.Oct.length,data.Nov.length,data.Dec.length]
      }
-
    ],
+
    credits: {
-    enabled: false
-  },
+     enabled: false
+   },
+
+   legend: {
+     enabled: false
+   },
 
 
-}
-     this.updateFlag = true;
-     this.IsWait=false;
+   }
+   this.updateFlag = true;
+   this.IsWait=false;
    }
 
 
        }
+

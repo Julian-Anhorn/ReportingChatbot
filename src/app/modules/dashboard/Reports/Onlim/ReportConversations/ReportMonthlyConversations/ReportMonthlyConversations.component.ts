@@ -5,6 +5,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import * as Highcharts from 'highcharts';
 import { ReportService } from '../../Onlimreport.service';
 import value from '*.json';
+import { DateAdapter } from '@angular/material/core';
 
 @Component({
   selector: 'app-ReportMonthly',
@@ -38,7 +39,7 @@ checked;
 categories =[];
 finalDataMap=[];
 
- constructor(private reportService: ReportService){
+ constructor(private reportService: ReportService, private dateAdapter: DateAdapter<any>){
   this.yAxis ={
     title: {
       text: ''
@@ -46,15 +47,13 @@ finalDataMap=[];
 
   this.startDate= new Date(2020, 4, 28);
   this.endDate = new Date(Date.now());
+  this.dateAdapter.setLocale('de');
 
 }
 
 
 ngOnInit(): void {
-  this.dataMap = []
-
-
-  this.reportService.getAll().subscribe(data => {
+    this.reportService.getAll().subscribe(data => {
     const result = data.map(item => Object.values(item));
 
     // this.jsonData=result.map(element => ({
@@ -211,7 +210,11 @@ console.log(data)
     rangeSelector: {
       selected: 1
   },
+
   exporting: {
+    sourceWidth: 1000,
+    sourceHeight: 600,
+    scale: 1,
     chartOptions: { // specific options for the exported image
         plotOptions: {
             series: {
@@ -224,7 +227,7 @@ console.log(data)
     fallbackToExportServer: false
 },
     title: {
-      text: "Konversationen monatlich<br>Gesamt:"+ this.total+"   \nØ:"+this.average+"/Monat",
+      text: "Konversationen monatlich<br>Gesamt:"+ this.total+"   \nØ"+this.average,
       align: 'center'},
 
     xAxis:{

@@ -73,8 +73,8 @@ changeColor(){
           selected: 1
       },
       exporting: {
-        sourceWidth: 800,
-        sourceHeight: 400,
+        sourceWidth: 1000,
+        sourceHeight: 600,
         scale: 1
     },
 
