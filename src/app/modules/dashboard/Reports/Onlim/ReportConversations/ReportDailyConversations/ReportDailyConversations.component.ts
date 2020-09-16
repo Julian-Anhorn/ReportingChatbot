@@ -77,7 +77,6 @@ export class ReportDailyConversationsComponent implements OnInit {
       this.categories.push(element.Day)
       this.total+=element.Count
     });
-    console.log( this.dataMap)
     this.categories=["Montag","Dienstag","Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
 
 
@@ -100,7 +99,6 @@ setStartDate(type: string, event: MatDatepickerInputEvent<Date>) {
 }
 setEndDate(type: string, event: MatDatepickerInputEvent<Date>) {
   this.endDate=moment(new Date(`${type}: ${event.value}`));
-  console.log(this.endDate)
   this.updateData()
 }
 updateData(){
@@ -111,7 +109,7 @@ updateData(){
     try{
 
    let timestamp=new Date(element[1][0]['created_at']);
-   //+1 Tag sonst wird 00:00Uhr von EndDay ausgewählt und der Tag nicht mitgezählt
+   //+1 Tag sonst wird 00:00Uhr von EndDay ausgewählt und der endTag nicht mitgezählt
    this.endDate = new Date( this.endDate + ( 3600 * 1000 * 24))
 
 
@@ -132,7 +130,6 @@ updateData(){
 });
   this.categories=["Montag","Dienstag","Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]
 
-  console.log(this.dataMap);
   let finalData =[]
   this.categories.forEach(element => {
   let elm = this.dataMap.find(item => item.Day===element)
@@ -148,7 +145,6 @@ updateData(){
 
     }
 });
-console.log(finalCat)
   this.categories = finalCat;
   this.finalDataMap= finalData;
   this.setAverage()
@@ -156,10 +152,26 @@ console.log(finalCat)
 }
 
 
-setAverage(){
-  var diffDays = moment(this.endDate).diff(moment(this.startDate), 'days');
-  this.average= (this.total / diffDays).toFixed(0);
+// setAverage(){
+//   var diffDays = moment(this.endDate).diff(moment(this.startDate), 'days');
+//   this.average= (this.total / diffDays).toFixed(0);
 
+// }
+
+
+setAverage(){
+  var arr = [];
+  console.log(this.endDate)
+  // Get "next" monday
+  let tmp = moment(this.startDate).clone().day(1);
+  if( tmp.isAfter(this.startDate, 'd') ){
+    arr.push(tmp.format('YYYY-MM-DD'));
+  }
+  while( tmp.isSameOrAfter(this.endDate) ){
+    tmp.add(7, 'days');
+    arr.push(tmp.format('YYYY-MM-DD'));
+  }
+  console.log(arr);
 }
 
 displayAvgLine(){

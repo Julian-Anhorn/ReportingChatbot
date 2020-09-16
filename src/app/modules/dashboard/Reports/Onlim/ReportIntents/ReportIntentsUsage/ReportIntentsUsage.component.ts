@@ -7,6 +7,7 @@ import * as moment from 'moment';
 import { Options } from 'highcharts';
 import IntentsFile from 'src/app/Data/Intents.json'
 import HC_exporting from 'highcharts/modules/exporting';
+import { element } from 'protractor';
 HC_exporting(Highcharts);
 
 @Component({
@@ -55,17 +56,19 @@ ngOnInit(): void {
 
       this.jsonData.forEach(element => {
         element["filteredData"].forEach(innerElement => {
-          this.nData.push(innerElement["intent_uid"])
-
+          if(innerElement["intent_uid"]!=undefined){
+            this.nData.push(innerElement["intent_uid"])
+          }
         });
 
 
       })
       var counts=[]
 
-      this.nData.forEach(function(x) {
-        if(IntentsFile.find(item => item.uid == ""+x+"")!=undefined){
-          var realName=IntentsFile.find(item => item.uid == ""+x+"").name
+      this.nData.forEach(function(uid) {
+        if(IntentsFile.find(item => item.uid == ""+uid+"")!=undefined){
+
+          var realName=IntentsFile.find(item => item.uid == ""+uid+"").name
         }
 
         if((counts.some(item => item.name == ""+realName+"") == false)){
@@ -73,7 +76,8 @@ ngOnInit(): void {
 
           counts.push(temp)
         }
-        if(x != null){
+
+        if(uid != null ){
           counts.find(item => item.name == ""+realName+"").y+=1
         }
       });

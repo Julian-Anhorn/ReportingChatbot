@@ -6,6 +6,7 @@ import * as Highcharts from 'highcharts';
 import { ReportService } from '../../Onlimreport.service';
 import value from '*.json';
 import { DateAdapter } from '@angular/material/core';
+import { element } from 'protractor';
 
 @Component({
   selector: 'app-ReportMonthly',
@@ -51,7 +52,6 @@ finalDataMap=[];
 
 }
 
-
 ngOnInit(): void {
     this.reportService.getAll().subscribe(data => {
     const result = data.map(item => Object.values(item));
@@ -66,42 +66,44 @@ ngOnInit(): void {
       let month;
       this.jsonData.forEach(element => {
         try{
-       month = moment(element[1][0]['created_at']).format('MMM/YY')
-       if(this.dataMap.find(item => item.Monat==month)==undefined){
-        this.dataMap.push({"Monat":month,"Anzahl":0})
+       month = moment(element[1][0]['created_at']).format('MM/01/YYYY')
+       if(this.dataMap.find(item => item.Month==month)==undefined){
+        this.dataMap.push({"Month":month,"Count":0})
        }
         }catch(e){
         }
-        this.dataMap.find(item => item.Monat==month).Anzahl++;
+        this.dataMap.find(item => item.Month==month).Count++;
       }
     )
     this.dataMap.forEach(element => {
-      this.categories.push(element.Monat)
-      this.total+=element.Anzahl
+
+      this.categories.push(moment(element.Month))
+      this.total+=element.Count
     });
     //Monat sortieren
-    let finaleCat = this.categories.sort((a, b) => {
-      return moment(moment(b.Monat).format("M/YY")).diff(moment(a.Monat).format("M/YY"));
-    });
-
-    finaleCat.reverse();
 
 
+    this.categories= this.categories.sort((a, b) => a.valueOf() - b.valueOf())
+    let finalCat=[]
     let finalData =[]
-    finaleCat.forEach(element => {
-      finalData.push(this.dataMap.find(item => item.Monat===element).Anzahl)
-    });
+for (let index = 0; index < this.categories.length; index++) {
+
+ let month=moment(this.categories[index]).format("MM/DD/YYYY");
+   finalData.push(this.dataMap.find(item => item.Month===month).Count)
+   finalCat.push(moment(month).format("MMM/YY"))
+}
+
+
+
     this.categories=[]
     this.finalDataMap=[]
-    this.categories =finaleCat;
+    this.categories =finalCat;
     this.finalDataMap= finalData;
-    this.setAverage(finaleCat)
-    this.updateChart(finaleCat,finalData);
-
+    this.setAverage(finalCat)
+    this.updateChart(finalCat,finalData);
   });
 }
 setStartDate(type: string, event: MatDatepickerInputEvent<Date>) {
-
   this.startDate=moment(new Date(`${type}: ${event.value}`));
   this.endDate= new Date(Date.now());
 }
@@ -205,7 +207,6 @@ this.updateChart(this.categories,this.finalDataMap)
 
 
 updateChart(range,data) {
-console.log(data)
   this.chartOptions={
     rangeSelector: {
       selected: 1

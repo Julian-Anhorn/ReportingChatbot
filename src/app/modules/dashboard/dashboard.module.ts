@@ -27,12 +27,13 @@ import { ReportIntentsUsageComponent } from './Reports/Onlim/ReportIntents/Repor
 import { ReportMissingAnswerComponent } from './Reports/Onlim/ReportIntents/ReportMissingAnswer/ReportMissingAnswer.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { ReportMonthlyMessagesComponent } from './Reports/Onlim/ReportMessages/ReportMonthlyMessages/ReportMonthlyMessages.component';
 
 
 
 
 @NgModule({
-  declarations: [DashboardComponent,ReportSiteStateComponent,ReportConversationsComponent,ReportMessagesComponent,ReportDailyConversationsComponent,ReportMothlyConversationsComponent,ReportHourlyConversationsComponent,ReportIntentsComponent,ReportIntentsUsageComponent,ReportMissingAnswerComponent],
+  declarations: [DashboardComponent,ReportSiteStateComponent,ReportConversationsComponent,ReportMessagesComponent,ReportDailyConversationsComponent,ReportMothlyConversationsComponent,ReportHourlyConversationsComponent,ReportIntentsComponent,ReportIntentsUsageComponent,ReportMissingAnswerComponent, ReportMonthlyMessagesComponent],
   exports:[DashboardComponent, ReportSiteStateComponent, ReportMessagesComponent],
   imports: [
     CommonModule,
